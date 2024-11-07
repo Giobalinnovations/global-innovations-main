@@ -28,7 +28,7 @@ const HomeTwo = () => {
         <ServiceTwo />
         <StoryTwo />
         <Dashboard />
-        <ProvideOne />
+        {/* <ProvideOne />s */}
         <Strategy />
         <TestimonialOne />
         <Solutions />

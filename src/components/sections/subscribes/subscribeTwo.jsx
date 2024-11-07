@@ -20,13 +20,13 @@ const SubscribeTwo = () => {
           <div className="rounded-[30px] bg-gray lg:px-12.5 px-7.5 lg:pt-14 pt-7.5 lg:pb-16 pb-7.5 flex lg:flex-row flex-col justify-between lg:items-center">
             <div className="pb-6 max-w-[750px] w-full relative">
               <Title size={'5xl'} className={'max-w-[707px]'}>
-                Ready to Transform Your Digital Presence?
+                All set to intensify your Online presence?
               </Title>
               <p>
-                Schedule a 30 minutes Meeting with Our Experts to Propel Your
-                Online Success.
+                Book a meeting with our Digital Experts To Drive your brand’s
+                Digital Footprint.
               </p>
-              <div className="absolute -right-20 top-1/2 -translate-y-1/2 lg:block hidden">
+              <div className="absolute hidden -translate-y-1/2 -right-20 top-1/2 lg:block">
                 <Image
                   src={'/images/shapes/business-consultant-cta-arrow.png'}
                   width={188}
@@ -67,7 +67,7 @@ const Form = () => {
           <DialogClose></DialogClose>
         </div>
         <form className="p-4 pt-0">
-          <div className="flex md:flex-row flex-col justify-between gap-5">
+          <div className="flex flex-col justify-between gap-5 md:flex-row">
             <Input
               type={'text'}
               placeholder={'Your Name'}
@@ -83,7 +83,7 @@ const Form = () => {
               }
             />
           </div>
-          <div className="flex md:flex-row flex-col justify-between gap-5 mt-4">
+          <div className="flex flex-col justify-between gap-5 mt-4 md:flex-row">
             <Input
               type={'text'}
               placeholder={'Your Country'}
@@ -99,7 +99,7 @@ const Form = () => {
               }
             />
           </div>
-          <div className="flex md:flex-row flex-col justify-between gap-5 mt-4">
+          <div className="flex flex-col justify-between gap-5 mt-4 md:flex-row">
             <Input
               type={'email'}
               placeholder={'Your Country'}
@@ -115,7 +115,7 @@ const Form = () => {
               }
             />
           </div>
-          <div className="mt-5 flex items-start">
+          <div className="flex items-start mt-5">
             <input type="checkbox" id="checkbox" className="w-4 h-4" />
             <label
               htmlFor="checkbox"
@@ -125,7 +125,7 @@ const Form = () => {
               data policies of Global InnovationsMarketing.
             </label>
           </div>
-          <div className="mt-8 flex justify-end pb-8">
+          <div className="flex justify-end pb-8 mt-8">
             <Button>Send request</Button>
           </div>
         </form>
