@@ -1,39 +1,50 @@
-import SlideRight from '@/components/animations/slideRight'
-import SlideUp from '@/components/animations/slideUp'
-import { Button } from '@/components/ui/button'
-import PlayIcon from '@/components/ui/playIcon'
-import Title from '@/components/ui/title'
-import Link from 'next/link'
-import React from 'react'
+import SlideRight from '@/components/animations/slideRight';
+import SlideUp from '@/components/animations/slideUp';
+import { Button } from '@/components/ui/button';
+import PlayIcon from '@/components/ui/playIcon';
+import Title from '@/components/ui/title';
+import Link from 'next/link';
+import React from 'react';
 
 const StoryContentOne = () => {
-    return (
-        <div >
-            <SlideUp>
-                <Title size={"5xl"} className={"xl:leading-[140%] lg:max-w-[645px]"}>
-                    Discover Our Story: Redefine Digital Excellence at NextMarketing.
-                </Title>
+  return (
+    <div>
+      <SlideUp>
+        <Title size={'5xl'} className={'xl:leading-[140%] lg:max-w-[645px]'}>
+          Technology That Transforms Your Business
+        </Title>
 
-                <div className='lg:max-w-[645px]'>
-                    <p className='font-semibold text-muted-foreground mt-6'>Step into the heart of RankFlow, where a dynamic blend of passion and expertise fuels our journey to redefine digital success. </p>
+        <div className="lg:max-w-[645px]">
+          <p className="mt-6 font-semibold text-muted-foreground">
+            Choose Global innovations as your business needs more than just a
+            technology support to accelerate the business growth.{' '}
+          </p>
 
-                    <p className='mt-7.5 font-medium'> Since 2012, we've been pioneering innovative solutions, crafting unique narratives, and consistently delivering exceptional results. Join us in shaping the future of digital excellence!</p>
-                </div>
-
-                <div className='flex items-center sm:gap-[32px] gap-6 md:pt-[55px] pt-7 pb-[22px]'>
-                    <div>
-                        <Button asChild>
-                            <Link href="/about-us">  Get Started</Link>
-                        </Button>
-                    </div>
-                    <div className='flex items-center gap-2'>
-                        <PlayIcon playOne={false} />
-                        <p className='font-semibold sm:block hidden'>How It works?</p>
-                    </div>
-                </div>
-            </SlideUp>
+          <p className="mt-7.5 font-medium">
+            {' '}
+            it needs a partner who will understand your business goals. Global
+            Innovations provides all-around digital marketing solutions that
+            enhance your operations by streamlining them, enhancing productivity
+            and customer experience. We offer 7 years of expertise in the
+            industry, enabling companies worldwide to be better equipped with
+            trusted, adaptive, and future-ready solutions.
+          </p>
         </div>
-    )
-}
 
-export default StoryContentOne
+        <div className="flex items-center sm:gap-[32px] gap-6 md:pt-[55px] pt-7 pb-[22px]">
+          <div>
+            <Button asChild>
+              <Link href="/about-us"> Get Started</Link>
+            </Button>
+          </div>
+          <div className="flex items-center gap-2">
+            <PlayIcon playOne={false} />
+            <p className="hidden font-semibold sm:block">How It works?</p>
+          </div>
+        </div>
+      </SlideUp>
+    </div>
+  );
+};
+
+export default StoryContentOne;

@@ -8,7 +8,7 @@ const Logo = () => {
       <Link href={'/'} className="relative">
         <Image
           src={'/images/logo.webp'}
-          width={85}
+          width={75}
           height={53}
           unoptimized="true"
           alt="logo-white"
@@ -19,8 +19,8 @@ const Logo = () => {
         />
         <Image
           src={'/images/logo.webp'}
-          width={85}
-          height={53}
+          width={75}
+          height={45}
           unoptimized="true"
           alt="logo-original"
           className="block object-cover dark:hidden"
