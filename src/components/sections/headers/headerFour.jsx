@@ -8,15 +8,9 @@ import MegaMenu from './megaMenu';
 import DropDownMenu from './dropDownMenu';
 import { IoIosArrowDown } from 'react-icons/io';
 import { Button } from '@/components/ui/button';
-import HeaderShortInfo from './headerShortInfo';
+
 import MobileMenu from './mobileMenu';
-import {
-  Offcanvas,
-  OffcanvasContent,
-  OffcanvasOverlay,
-  OffcanvasTrigger,
-  OffcanvasClose,
-} from '@/components/ui/offcanvas';
+
 import StickyHeader from '@/components/ui/stickyHeader';
 import TopHeader from './topHeader';
 
@@ -47,12 +41,18 @@ const HeaderFour = () => {
                             className="font-semibold leading-[22px] flex items-center gap-1 text-muted-foreground relative transition-all duration-500 group-hover:text-primary-foreground"
                           >
                             {lable}
-                            <span className="transition-all duration-500 group-hover:rotate-180 group-hover:text-primary-foreground">
-                              <IoIosArrowDown />
-                            </span>
+                            {dropDown.length > 0 ? (
+                              <span className="transition-all duration-500 group-hover:rotate-180 group-hover:text-primary-foreground">
+                                <IoIosArrowDown />
+                              </span>
+                            ) : null}
                           </Link>
-                          {megaMenu.length && <MegaMenu data={megaMenu} />}
-                          {dropDown.length && <DropDownMenu data={dropDown} />}
+                          {megaMenu.length > 0 ? (
+                            <MegaMenu data={megaMenu} />
+                          ) : null}
+                          {dropDown.length > 0 ? (
+                            <DropDownMenu data={dropDown} />
+                          ) : null}
                         </li>
                       );
                     })}
@@ -62,20 +62,6 @@ const HeaderFour = () => {
                   <Button asChild size="xl" className="dark:text-white">
                     <Link href={'/contact-us'}> Let’s Talk </Link>
                   </Button>
-
-                  <Offcanvas>
-                    <OffcanvasTrigger>
-                      <div className={`flex flex-col gap-3 cursor-pointer`}>
-                        <span className="h-[4px] w-10 bg-muted rounded-lg block"></span>
-                        <span className="h-[4px] w-5 bg-muted rounded-lg block"></span>
-                      </div>
-                    </OffcanvasTrigger>
-                    <OffcanvasOverlay />
-                    <OffcanvasContent className="top-0">
-                      <OffcanvasClose />
-                      <HeaderShortInfo />
-                    </OffcanvasContent>
-                  </Offcanvas>
                 </div>
                 <MobileMenu data={menuList} />
               </div>

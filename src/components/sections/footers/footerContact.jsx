@@ -20,7 +20,7 @@ const FooterContact = ({ bgColor, color, white_logo }) => {
           <Logo />
         )}
       </div>
-      <div className="flex md:flex-row flex-col justify-between gap-8">
+      <div className="flex flex-col justify-between gap-8 md:flex-row">
         <div className="flex items-center gap-8">
           <div
             className={cn(
@@ -35,8 +35,8 @@ const FooterContact = ({ bgColor, color, white_logo }) => {
             />
           </div>
           <div className={cn(`${color}`)}>
-            <p>243, Eastern Parkway,</p>
-            <p>Brooklyn, New York, USA</p>
+            <p>136 Rider House Sec 44,</p>
+            <p> Gurugram 122003</p>
           </div>
         </div>
         <div className="flex items-center gap-8">

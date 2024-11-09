@@ -60,12 +60,18 @@ const HeaderTwo = ({ haveOvcanvsIcon, haveShadow }) => {
                             className="font-semibold leading-[22px] flex items-center gap-1 text-muted-foreground relative transition-all duration-500 group-hover:text-primary-foreground"
                           >
                             {lable}
-                            <span className="transition-all duration-500 group-hover:rotate-180 group-hover:text-primary-foreground ">
-                              <IoIosArrowDown />
-                            </span>
+                            {dropDown.length > 0 ? (
+                              <span className="transition-all duration-500 group-hover:rotate-180 group-hover:text-primary-foreground ">
+                                <IoIosArrowDown />
+                              </span>
+                            ) : null}
                           </Link>
-                          {megaMenu.length && <MegaMenu data={megaMenu} />}
-                          {dropDown.length && <DropDownMenu data={dropDown} />}
+                          {megaMenu.length > 0 ? (
+                            <MegaMenu data={megaMenu} />
+                          ) : null}
+                          {dropDown.length > 0 ? (
+                            <DropDownMenu data={dropDown} />
+                          ) : null}
                         </li>
                       );
                     })}

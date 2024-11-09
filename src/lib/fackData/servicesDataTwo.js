@@ -18,6 +18,7 @@ export const servicesDataTwo = [
     id: 1,
     icon_1: <DigitalMarketing width={24} height={24} />,
     service_name: 'Digital Marketing Services',
+    slug: 'digital-marketing-services',
     description:
       'We expand your online presence to meet the aims of your marketing efforts by means of effective, data-driven digital marketing strategies',
   },
@@ -25,6 +26,7 @@ export const servicesDataTwo = [
     id: 2,
     icon_1: <Send />,
     service_name: 'Social Media Marketing',
+    slug: 'social-media-marketing',
     description:
       'With SMM expertise, we are passionate about helping you create and interact with your online community using innovative and relevant content, campaigns, and ads.',
   },
@@ -32,6 +34,7 @@ export const servicesDataTwo = [
     id: 3,
     icon_1: <Activity height={36} width={35} />,
     service_name: 'SEO Services',
+    slug: 'seo-services',
     description:
       'Global Innovations is looking to take your SERPs on Bing, Google, and DuckDuckGo to the next level through the use of ethical SEO methods in an effort to bring more organic traffic to your site.',
   },
@@ -39,6 +42,7 @@ export const servicesDataTwo = [
     id: 4,
     icon_1: <Influencer width={36} height={35} />,
     service_name: 'Influencer Marketing Services',
+    slug: 'influencer-marketing-services',
     description:
       'Gen-Z leaders at Global Innovations connect you with influential influencers to amplify your brand message for increased trust and loyalty.',
   },
@@ -46,6 +50,7 @@ export const servicesDataTwo = [
     id: 5,
     icon_1: <WebDevelopment width={36} height={35} />,
     service_name: 'Web Development Services',
+    slug: 'web-development-services',
     description:
       'Our UI/UX Designers design engaging and user-friendly websites that depict your brand and attract the target audience to your sites.',
   },
@@ -53,6 +58,7 @@ export const servicesDataTwo = [
     id: 6,
     icon_1: <PrAgency width={36} height={35} />,
     service_name: 'PR Agencys',
+    slug: 'pr-agencys',
     description:
       'Our effective public relations services help grow your brand visibility, reputation, and engagement, creating a connection to the targeted audience.',
   },
@@ -60,12 +66,14 @@ export const servicesDataTwo = [
     id: 7,
     icon_1: <MediaBuying width={36} height={35} />,
     service_name: 'Media Buying Company',
+    slug: 'media-buying-company',
     description: `Get more extensive reach and a higher ROI with our media buying by ensuring you're getting placed in the best ad opportunity and strategy for multiple online and offline channels.`,
   },
   {
     id: 8,
     icon_1: <SearchEngineMarketing width={36} height={35} />,
     service_name: 'Search Engine Marketing Services',
+    slug: 'search-engine-marketing-services',
     description: `Unlock online presence and drive conversion traffic with our data-driven SEM services built to build visibility, convert better, and deliver results.`,
   },
 ];

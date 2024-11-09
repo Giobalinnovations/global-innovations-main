@@ -1,11 +1,9 @@
 import React from 'react';
-import BlogOne from '@/components/sections/blogs/blogOne';
-import Dashboard from '@/components/sections/dashboard';
+// import BlogOne from '@/components/sections/blogs/blogOne';
 import FaqOne from '@/components/sections/faqs/faqOne';
 import HeroTwo from '@/components/sections/heroes/heroTwo';
 import StoryTwo from '@/components/sections/ourStories/storyTwo';
-import PriceTwo from '@/components/sections/pricing/priceTwo';
-import ProvideOne from '@/components/sections/provides/provideOne';
+
 import ServiceTwo from '@/components/sections/services/serviceTwo';
 import Solutions from '@/components/sections/solutions';
 import Strategy from '@/components/sections/strategy';
