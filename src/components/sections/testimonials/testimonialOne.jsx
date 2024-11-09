@@ -10,7 +10,9 @@ import { testimonialData } from '@/lib/fackData/testimonialData';
 import CardOne from './cardOne';
 import SlideUp from '@/components/animations/slideUp';
 
-const TestimonialOne = () => {
+const TestimonialOne = ({
+  title = 'Real Stories, Real Success : A Testimony to Our Excellence ',
+}) => {
   const pagination = {
     clickable: true,
     el: '.testimonial-pagination',
@@ -26,7 +28,7 @@ const TestimonialOne = () => {
           <div className="flex flex-col items-center">
             <Button variant="secondary">Social Proof</Button>
             <Title size={'5xl'} className="max-w-[869px] pt-6 text-center">
-              Our Clients’ Success is Our Greatest Achievement
+              {title}
             </Title>
           </div>
         </SlideUp>

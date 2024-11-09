@@ -32,6 +32,7 @@ const dm_sans = DM_Sans({
 export const metadata = {
   // title: 'Award Winning Marketing Agency in India | Global Innovations',
   // description: `Global Innovations Innovations is an award-winning best Marketing agency in India. We offer's a experts team that will help you grow your business traditional to digital & Join us Today!`,
+  metadataBase: new URL('https://www.globalinnovations.co.in'),
   icons: {
     icon: '/icon.png',
   },

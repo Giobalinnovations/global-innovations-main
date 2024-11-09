@@ -16,7 +16,7 @@ export const metadata = {
   title: 'Award Winning Marketing Agency in India | Global Innovations',
   description: `Global Innovations Innovations is an award-winning best Marketing agency in India. We offer's a experts team that will help you grow your business traditional to digital & Join us Today!`,
   keywords: `Best Marketing Agency in India, Top Marketing Agency in India, Digital Marketing services in India, Web development services in India, Website Marketing Services in India, Seo Marketing services in India, Best seo Marketing Agency in India, Social Media Marketing Agency in India, Best pr Marketing Agency in India, Marketing Agency in India`,
-  metadataBase: new URL('https://www.globalinnovations.co.in'),
+  // metadataBase: new URL('https://www.globalinnovations.co.in'),
   alternates: {
     canonical: '/',
   },

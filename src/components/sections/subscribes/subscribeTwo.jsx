@@ -12,7 +12,10 @@ import {
 import Input from '@/components/ui/input';
 import SlideUp from '@/components/animations/slideUp';
 
-const SubscribeTwo = () => {
+const SubscribeTwo = ({
+  title = 'All set to intensify your Online presence?',
+  description = `Book a meeting with our Digital Experts To Drive your brand’s Digital Footprint.`,
+}) => {
   return (
     <section className="lg:py-15 py-9">
       <SlideUp>
@@ -20,12 +23,9 @@ const SubscribeTwo = () => {
           <div className="rounded-[30px] bg-gray lg:px-12.5 px-7.5 lg:pt-14 pt-7.5 lg:pb-16 pb-7.5 flex lg:flex-row flex-col justify-between lg:items-center">
             <div className="pb-6 max-w-[750px] w-full relative">
               <Title size={'5xl'} className={'max-w-[707px]'}>
-                All set to intensify your Online presence?
+                {title}
               </Title>
-              <p>
-                Book a meeting with our Digital Experts To Drive your brand’s
-                Digital Footprint.
-              </p>
+              <p>{description}</p>
               <div className="absolute hidden -translate-y-1/2 -right-20 top-1/2 lg:block">
                 <Image
                   src={'/images/shapes/business-consultant-cta-arrow.png'}

@@ -36,3 +36,41 @@ export const faqData = [
     ans: 'Contact us for discussing a customized plan by our expert consultants.',
   },
 ];
+
+export const faqData2 = [
+  {
+    id: 'one',
+    question: 'What services does Global Innovations offer?',
+    ans: 'Global Innovations specializes in areas of Digital Marketing, SEO, web development, social media marketing, influencer marketing, and media buying, all focused on business growth by innovation and technology.',
+  },
+  {
+    id: 'two',
+    question: 'How does Global Innovations help businesses grow?',
+    ans: 'We tap modern technology and smart strategies designed especially for your business, helping you scale, engage with customers, and gain measurable success in the digital world.',
+  },
+  {
+    id: 'three',
+    question: 'Global Innovations cater most to which industries in the world.',
+    ans: 'We service multiple industries such as eCommerce, technology, health, education, hospitality, and many more providing tailored digital services for every industry.',
+  },
+  {
+    id: 'four',
+    question: 'What are your Digital Marketing services?',
+    ans: 'Our full-scale digital marketing strategy would include SEO, SEM, social media marketing, content creation for boosting the online presence of your brand and driving conversions.',
+  },
+  {
+    id: 'five',
+    question: 'What makes Global Innovations special?',
+    ans: 'A customer-centric approach, innovative solutions, and a collaborative mindset assure we not only meet but exceed the expectations of our clients-and deliver results that truly matter.',
+  },
+  {
+    id: 'six',
+    question: 'How does Social Media Marketing help my brand?',
+    ans: 'Our Social Media Marketing services target engagement, build brand loyalty, and drive traffic through well-thought strategies of content and targeted campaigns on Facebook and Instagram channels.',
+  },
+  {
+    id: 'seven',
+    question: 'How to start with Global Innovations?',
+    ans: 'The most convenient way is through a website. Book a free consultation or ask for an audit of your website with which we will see how it can help you realize your digital goals.',
+  },
+];

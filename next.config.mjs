@@ -10,7 +10,7 @@ const nextConfig = {
 
   // new
   output: 'export',
-  trailingSlash: true,
+  // trailingSlash: true,
   images: {
     unoptimized: true,
     remotePatterns: [
