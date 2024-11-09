@@ -6,29 +6,14 @@ import SocialIcons from '../../ui/socialIcons';
 const MobileExtraInfo = () => {
   return (
     <div>
-      <ul className="px-4 mt-3">
-        {headerExtraInfo.map(({ icon, id, label, link }) => {
-          return (
-            <li key={id} className="py-2.5">
-              <Link
-                href={link}
-                className="flex items-center gap-[15px] font-semibold text-secondary-foreground dark:text-muted-foreground"
-              >
-                {icon}
-                <span className="font-semibold">{label}</span>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-      <div className="text-secondary-foreground dark:text-muted-foreground px-4 mt-10">
+      <div className="px-4 mt-10 text-secondary-foreground dark:text-muted-foreground">
         <ul className="mb-[26px]">
           <li className="flex items-center gap-3">
             <span className="mt-[3px]">
               <FaRegEnvelope />
             </span>
             <Link
-              href={'mailto:contact@nextmarketing.com'}
+              href={'mailto:info@globalinnovations.co.in'}
               className="text-base"
             >
               info@globalinnovations.co.in
@@ -38,8 +23,8 @@ const MobileExtraInfo = () => {
             <span>
               <FaPhoneFlip />
             </span>
-            <Link href={'tel:17186385000'} className="text-base">
-              +1.718.638.5000
+            <Link href={'tel:+919911113576'} className="text-base">
+              +91-9911113576
             </Link>
           </li>
         </ul>

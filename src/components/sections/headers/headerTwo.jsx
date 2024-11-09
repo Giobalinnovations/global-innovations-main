@@ -84,7 +84,7 @@ const HeaderTwo = ({ haveOvcanvsIcon, haveShadow }) => {
                     <Link href={'/contact-us'}> Let’s Talk </Link>
                   </Button>
 
-                  <Offcanvas>
+                  {/* <Offcanvas>
                     <OffcanvasTrigger>
                       <div
                         className={`${
@@ -102,7 +102,7 @@ const HeaderTwo = ({ haveOvcanvsIcon, haveShadow }) => {
                       <OffcanvasClose />
                       <HeaderShortInfo />
                     </OffcanvasContent>
-                  </Offcanvas>
+                  </Offcanvas> */}
                 </div>
                 <MobileMenu data={menuList} />
               </div>
