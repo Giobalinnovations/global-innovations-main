@@ -38,13 +38,11 @@ const HomeTwo = () => {
         <HeroTwo />
         <ServiceTwo />
         <StoryTwo />
-        {/* <Dashboard /> */}
         <Strategy />
         <TestimonialOne />
         <Solutions />
-        {/* <PriceTwo /> */}
         <FaqOne />
-        <BlogOne />
+        {/* <BlogOne /> */}
         <SubscribeTwo />
       </main>
       <FooterTwo />

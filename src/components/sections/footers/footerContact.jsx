@@ -57,11 +57,11 @@ const FooterContact = ({ bgColor, color, white_logo }) => {
               {' '}
               <span className="font-semibold">Email:</span>{' '}
               <Link
-                href={'mailto:info@next.com'}
+                href={'mailto:info@globalinnovations.co.in'}
                 className="relative hover-underline after:h-[1px] after:bg-muted"
               >
                 {' '}
-                info@next.com
+                info@globalinnovations.co.in
               </Link>{' '}
             </p>
             <p>

@@ -160,48 +160,48 @@ export const menuList = [
     ],
     megaMenu: false,
   },
-  {
-    id: 5,
-    path: '#',
-    lable: 'Blog',
-    dropDown: [
-      {
-        id: 1,
-        path: '/modern-with-sidebar',
-        lable: 'Modern With Sidebar',
-        tag: '',
-      },
-      {
-        id: 2,
-        path: '/classic-with-sidebar',
-        lable: 'Classic With Sidebar',
-        tag: '',
-      },
-      {
-        id: 3,
-        path: '/blog-list',
-        lable: 'Blog List',
-        tag: '',
-      },
-      {
-        id: 4,
-        path: '/modern-without-sidebar',
-        lable: 'Modern Without Sidebar',
-        tag: '',
-      },
-      {
-        id: 5,
-        path: '/blog-single-sidebar',
-        lable: 'Blog Single Sidebar',
-        tag: '',
-      },
-      {
-        id: 6,
-        path: '/blog-single-no-siderbar',
-        lable: 'Blog Single No Siderbar',
-        tag: '',
-      },
-    ],
-    megaMenu: false,
-  },
+  // {
+  //   id: 5,
+  //   path: '#',
+  //   lable: 'Blog',
+  //   dropDown: [
+  //     {
+  //       id: 1,
+  //       path: '/modern-with-sidebar',
+  //       lable: 'Modern With Sidebar',
+  //       tag: '',
+  //     },
+  //     {
+  //       id: 2,
+  //       path: '/classic-with-sidebar',
+  //       lable: 'Classic With Sidebar',
+  //       tag: '',
+  //     },
+  //     {
+  //       id: 3,
+  //       path: '/blog-list',
+  //       lable: 'Blog List',
+  //       tag: '',
+  //     },
+  //     {
+  //       id: 4,
+  //       path: '/modern-without-sidebar',
+  //       lable: 'Modern Without Sidebar',
+  //       tag: '',
+  //     },
+  //     {
+  //       id: 5,
+  //       path: '/blog-single-sidebar',
+  //       lable: 'Blog Single Sidebar',
+  //       tag: '',
+  //     },
+  //     {
+  //       id: 6,
+  //       path: '/blog-single-no-siderbar',
+  //       lable: 'Blog Single No Siderbar',
+  //       tag: '',
+  //     },
+  //   ],
+  //   megaMenu: false,
+  // },
 ];

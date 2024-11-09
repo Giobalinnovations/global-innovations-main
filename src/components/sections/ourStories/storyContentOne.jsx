@@ -37,10 +37,10 @@ const StoryContentOne = () => {
               <Link href="/about-us"> Get Started</Link>
             </Button>
           </div>
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <PlayIcon playOne={false} />
             <p className="hidden font-semibold sm:block">How It works?</p>
-          </div>
+          </div> */}
         </div>
       </SlideUp>
     </div>

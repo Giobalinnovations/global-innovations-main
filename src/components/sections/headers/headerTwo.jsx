@@ -10,14 +10,6 @@ import { menuList } from '@/lib/fackData/menuList';
 import MegaMenu from './megaMenu';
 import DropDownMenu from './dropDownMenu';
 import MobileMenu from './mobileMenu';
-import HeaderShortInfo from './headerShortInfo';
-import {
-  Offcanvas,
-  OffcanvasContent,
-  OffcanvasOverlay,
-  OffcanvasTrigger,
-  OffcanvasClose,
-} from '@/components/ui/offcanvas';
 import StickyHeader from '@/components/ui/stickyHeader';
 import TopHeader from './topHeader';
 

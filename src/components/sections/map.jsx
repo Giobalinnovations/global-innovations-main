@@ -36,45 +36,19 @@ const ContactMap = () => {
         </div>
         <div>
           <div className="lg:pt-12.5 pt-7.5 relative z-[1] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[calc(100%-160px)] after:bg-gray after:rounded-[30px] after:z-[-1]">
-            <div className="shadow-[0px_4px_46.9px_0px_rgba(9,25,40,0.1)] rounded-[30px] max-w-[1320px] mx-auto relative">
-              <MapContainer
-                className="w-full max-w-[1320px] min-h-[510px] h-full rounded-[30px]"
-                center={[40.6716917, -73.9631364]}
-                zoom={18}
-              >
-                <TileLayer
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                />
-                <Marker position={[40.6716917, -73.9631364]} icon={icon}>
-                  <Popup>
-                    <div className="border border-border rounded-2xl p-4">
-                      <h5 className="text-lg font-bold text-muted-foreground">
-                        Global InnovationsUSA
-                      </h5>
-                      <b className="text-muted-foreground inline-block pt-2">
-                        NextMarketing Inc.
-                      </b>
-
-                      <p>243, Eastern Parkway, Brooklyn, New York, USA</p>
-                    </div>
-                  </Popup>
-                </Marker>
-              </MapContainer>
-            </div>
             <div className="lg:pt-[46px] pt-4 flex lg:flex-row flex-col justify-between max-w-[1320px] mx-auto pb-12.5 px-3 lg:px-0">
               <Card
                 icon={team_icon}
                 title={'Address'}
                 isIcon={false}
-                desc={'243, Eastern Parkway, Brooklyn, New York, USA'}
+                desc={'136 Rider House Sec 44, Gurugram 122003'}
               />
               <Card
                 icon={skills_icon}
                 title={'Contact'}
                 isIcon={false}
                 desc={`
-                             <p> <span class='font-semibold'>Email:</span> <a href={"mailto:info@next.com"} class='relative hover-underline after:h-[1px] after:bg-muted'> info@next.com</a> </p>
+                             <p> <span class='font-semibold'>Email:</span> <a href={"mailto:info@globalinnovations.co.in"} class='relative hover-underline after:h-[1px] after:bg-muted'> info@globalinnovations.co.in</a> </p>
                              <p> <span class='font-semibold'>Call us:</span> <a href={"tal:+919911113576"} class='relative hover-underline after:h-[1px] after:bg-muted'> +91-9911113576</Link> </p>
                              `}
               />
