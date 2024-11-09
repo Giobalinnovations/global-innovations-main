@@ -4,7 +4,6 @@ import SlotCounter from 'react-slot-counter';
 import PartnersSlider from '../partnersSlider';
 import { partnersData } from '@/lib/fackData/partnersData';
 import Title from '@/components/ui/title';
-import PlayIcon from '@/components/ui/playIcon';
 
 const HeroTwo = () => {
   return (
@@ -69,7 +68,7 @@ const HeroTwo = () => {
             alt="background image"
             className="mx-auto lg:rounded-[30px] rounded-2xl min-h-[400px] w-auto object-cover"
           />
-          <PlayIcon playOne={true} />
+          {/* <PlayIcon playOne={true} /> */}
         </div>
 
         <PartnersSlider

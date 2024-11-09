@@ -31,7 +31,7 @@ const StoryTwo = () => {
         <div className="flex flex-col justify-between lg:flex-row">
           <div className="order-1 mt-8 lg:order-0 lg:mt-0">
             <StroyContentOne />
-            <div className="flex items-center gap-5 pt-6">
+            {/* <div className="flex items-center gap-5 pt-6">
               <div className="w-[40%] md:w-auto">
                 <UserList userList={userList} />
               </div>
@@ -61,7 +61,7 @@ const StoryTwo = () => {
                   happy users around the globe
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="mx-auto lg:mr-0 order-0 lg:order-1">
             <SlideUp>

@@ -30,9 +30,8 @@ const dm_sans = DM_Sans({
 });
 
 export const metadata = {
-  title: 'NextPro',
-  description:
-    'Global Innovations a modern Next.js and Tailwind CSS Template there features General Marketing, Social Media Marketing, AI in Marketing, Paid Advertising, Video Marketing, Analytics and Reporting, Industry news & Trends, E-commerce Marketing',
+  // title: 'Award Winning Marketing Agency in India | Global Innovations',
+  // description: `Global Innovations Innovations is an award-winning best Marketing agency in India. We offer's a experts team that will help you grow your business traditional to digital & Join us Today!`,
   icons: {
     icon: '/icon.png',
   },
@@ -45,7 +44,7 @@ export default function RootLayout({ children }) {
         className={`${inter.variable} ${plus_jakarta_sans.variable} ${dm_sans.variable}`}
         suppressHydrationWarning={true}
       >
-        <HeaderTwo haveOvcanvsIcon={true} haveShadow={true} />
+        {/* <HeaderTwo haveOvcanvsIcon={true} haveShadow={true} /> */}
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -59,7 +58,7 @@ export default function RootLayout({ children }) {
             <CustomCursor />
           </CountryProvider>
         </ThemeProvider>
-        <FooterTwo />
+        {/* <FooterTwo /> */}
       </body>
     </html>
   );

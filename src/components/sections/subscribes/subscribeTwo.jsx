@@ -54,14 +54,14 @@ const Form = () => {
       <DialogTrigger>
         <span className="group rounded-full px-[38px] py-[18px] border-2 border-primary font-bold max-h-12.5 bg-primary text-secondary-foreground dark:text-muted-foreground flex justify-center items-center gap-2.5 transition-all duration-500 hover:bg-transparent hover:text-primary-foreground">
           {' '}
-          Schedule a Meeting
+          Let’s Connect, Schedule a Call
         </span>
       </DialogTrigger>
       <DialogContent className="max-w-[700px] p-0">
         <div className="flex items-center justify-between py-6 border-b border-b-[#dee2e6]">
           <DialogTitle className="pl-4">
             <h6 className="text-2xl font-bold text-muted-foreground">
-              Schedule a Meeting
+              Let’s Connect, Schedule a Call
             </h6>
           </DialogTitle>
           <DialogClose></DialogClose>

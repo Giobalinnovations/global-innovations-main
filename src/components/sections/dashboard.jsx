@@ -41,7 +41,7 @@ const Dashboard = () => {
                 icon={<Paper />}
                 title={'Built-in automation'}
                 desc={
-                  'Receive comprehensive reports detailing the impact of our efforts and gain valuable insights.'
+                  'Revolutionizing Beyond Expectations with India’s Leading Marketing Services'
                 }
               />
             </SlideRight>
@@ -49,9 +49,7 @@ const Dashboard = () => {
               <Card
                 icon={<Setting />}
                 title={'Automatic workflows'}
-                desc={
-                  'Receive comprehensive reports detailing the impact of our efforts and gain valuable insights.'
-                }
+                desc={'Renovating the Future with Imagination and Expertise'}
               />
             </SlideRight>
           </div>

@@ -12,31 +12,42 @@ import Strategy from '@/components/sections/strategy';
 import SubscribeTwo from '@/components/sections/subscribes/subscribeTwo';
 import TestimonialOne from '@/components/sections/testimonials/testimonialOne';
 import HeaderTwo from '@/components/sections/headers/headerTwo';
+import FooterTwo from '@/components/sections/footers/footerTwo';
 
 export const metadata = {
-  title: 'Global Innovations',
-  description:
-    'Global Innovations a modern Next.js and Tailwind CSS Template there features General Marketing, Social Media Marketing, AI in Marketing, Paid Advertising, Video Marketing, Analytics and Reporting, Industry news & Trends, E-commerce Marketing',
+  title: 'Award Winning Marketing Agency in India | Global Innovations',
+  description: `Global Innovations Innovations is an award-winning best Marketing agency in India. We offer's a experts team that will help you grow your business traditional to digital & Join us Today!`,
+  keywords: `Best Marketing Agency in India, Top Marketing Agency in India, Digital Marketing services in India, Web development services in India, Website Marketing Services in India, Seo Marketing services in India, Best seo Marketing Agency in India, Social Media Marketing Agency in India, Best pr Marketing Agency in India, Marketing Agency in India`,
+  metadataBase: new URL('https://www.globalinnovations.co.in'),
+  alternates: {
+    canonical: '/',
+  },
+  // verification: {
+  //   google: 'YsTlOsZiwtGZbGt2tjHOKhd10CXrHKhEez-SUhmCDg0',
+  // },
+  // openGraph: {
+  //   url: '/',
+  // },
 };
 
 const HomeTwo = () => {
   return (
     <>
-      {/* <HeaderTwo haveOvcanvsIcon={true} haveShadow={true} /> */}
+      <HeaderTwo haveOvcanvsIcon={true} haveShadow={true} />
       <main>
         <HeroTwo />
         <ServiceTwo />
         <StoryTwo />
-        <Dashboard />
-        {/* <ProvideOne />s */}
+        {/* <Dashboard /> */}
         <Strategy />
         <TestimonialOne />
         <Solutions />
-        <PriceTwo />
+        {/* <PriceTwo /> */}
         <FaqOne />
         <BlogOne />
         <SubscribeTwo />
       </main>
+      <FooterTwo />
     </>
   );
 };
