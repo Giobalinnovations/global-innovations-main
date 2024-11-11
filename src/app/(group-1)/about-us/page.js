@@ -5,8 +5,6 @@ import StoryFive from '@/components/sections/ourStories/storyFive';
 import PageTitle from '@/components/sections/pageTitle';
 import SubscribeTwo from '@/components/sections/subscribes/subscribeTwo';
 import TestimonialOne from '@/components/sections/testimonials/testimonialOne';
-// import TeamGrid from '@/components/sections/teams/teamGrid';
-// import TestimonialTwo from '@/components/sections/testimonials/testimonialTwo';
 
 export const metadata = {
   title: 'About Us | Global Innovations',
@@ -22,13 +20,12 @@ const About = () => {
       <PageTitle pageName={'About'} breadcrumbLink={'About us'} />
       <StoryFive
         counter={false}
-        title={`Building Success by Crafting Digital Solutions, Defined by Excellence.
-`}
+        title={`Building Success by Crafting Digital Solutions, Defined by Excellence.`}
         text1={`Global Innovations is in the business of delivering unique, insightful solutions that cater to your business objectives.`}
         text2={`From strategies that capture attention with meaningful results to contributing meaningfully to our clients' business objectives, we apply innovation at the core of what we do. Objective-setting lies at the heart of everything we do, committed to helping you achieve impactful success with consequences that are measurable.`}
       />
       <Mission />
-      {/* <TeamGrid /> */}
+
       <TestimonialOne title="Real Stories, Real Success : A Testimony to Our Excellence" />
       <FaqTwo />
       <SubscribeTwo />
