@@ -9,7 +9,7 @@ const nextConfig = {
   //   },
 
   // new
-  output: 'export',
+  // output: 'export',
   // trailingSlash: true,
   images: {
     unoptimized: true,

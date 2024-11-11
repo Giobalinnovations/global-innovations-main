@@ -20,11 +20,11 @@ const Services = () => {
       <PageTitle pageName={'Services'} breadcrumbLink={'Services'} />
       <StoryFour />
       <ServiceTwo />
-      <Approach />
-      <CountDown />
-      <ProvideOne />
+      {/* <Approach /> */}
+      {/* <CountDown /> */}
+      {/* <ProvideOne /> */}
       <Solutions />
-      <PriceThree />
+      {/* <PriceThree /> */}
       <ContactForm
         color={'text-white'}
         inputColor={

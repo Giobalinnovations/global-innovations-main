@@ -30,13 +30,6 @@ export const menuList = [
 
   {
     id: 4,
-    path: '/careers',
-    lable: 'Careers',
-    megaMenu: false,
-    dropDown: [],
-  },
-  {
-    id: 5,
     path: '/contact-us',
     lable: 'Contact',
     megaMenu: false,

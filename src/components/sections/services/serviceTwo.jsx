@@ -31,7 +31,7 @@ const ServiceTwo = () => {
                     "
             >
               {servicesDataTwo.map(
-                ({ id, description, icon_1, service_name }) => {
+                ({ id, description, icon_1, service_name, slug }) => {
                   return (
                     <div
                       key={id}
@@ -43,7 +43,7 @@ const ServiceTwo = () => {
                         </span>
                       </div>
                       <Link
-                        href={'/service-details'}
+                        href={`/services/${slug}`}
                         className="text-xl font-extrabold text-muted-foreground leading-[140%] multiline-hover"
                       >
                         {service_name}

@@ -13,14 +13,9 @@ const ImportanceLinks = ({ color }) => {
           path: '/about-us',
           label: 'About Us',
         },
-        {
-          id: 2,
-          path: '/career',
-          label: 'Careers',
-        },
 
         {
-          id: 4,
+          id: 2,
           path: '/contact-us',
           label: 'Contact',
         },
