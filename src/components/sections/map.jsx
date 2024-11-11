@@ -41,7 +41,9 @@ const ContactMap = () => {
                 icon={team_icon}
                 title={'Address'}
                 isIcon={false}
-                desc={'136 Rider House Sec 44, Gurugram 122003'}
+                desc={
+                  'Plot no 136, 3rd floor, Rider House Sec 44, Gurugram 122003'
+                }
               />
               <Card
                 icon={skills_icon}

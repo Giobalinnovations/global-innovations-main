@@ -38,7 +38,7 @@ const HeaderShortInfo = () => {
       <div className="px-12.5 pb-12.5">
         <h5 className="font-semibold text-muted-foreground">Get In Touch</h5>
         <div className="text-[#7C848C] mb-[26px]">
-          <p>136 Rider House Sec 44, Gurugram 122003</p>
+          <p>Plot no 136, 3rd floor, Rider House Sec 44, Gurugram 122003</p>
           <p>
             {' '}
             <Link href={'mailto:info@globalinnovations.co.in'}>

@@ -35,7 +35,7 @@ const FooterContact = ({ bgColor, color, white_logo }) => {
             />
           </div>
           <div className={cn(`${color}`)}>
-            <p>136 Rider House Sec 44,</p>
+            <p>Plot no 136, 3rd floor, Rider House Sec 44,</p>
             <p> Gurugram 122003</p>
           </div>
         </div>
