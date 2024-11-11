@@ -9,7 +9,7 @@ import {
   DialogTrigger,
   DialogClose,
 } from '@/components/ui/dialog';
-import Input from '@/components/ui/input';
+import InputTwo from '@/components/ui/inputTwo';
 import SlideUp from '@/components/animations/slideUp';
 
 const SubscribeTwo = ({
@@ -68,14 +68,14 @@ const Form = () => {
         </div>
         <form className="p-4 pt-0">
           <div className="flex flex-col justify-between gap-5 md:flex-row">
-            <Input
+            <InputTwo
               type={'text'}
               placeholder={'Your Name'}
               className={
                 'bg-primary font-medium placeholder:text-white text-white w-full'
               }
             />
-            <Input
+            <InputTwo
               type={'text'}
               placeholder={'Your SurName'}
               className={
@@ -84,14 +84,14 @@ const Form = () => {
             />
           </div>
           <div className="flex flex-col justify-between gap-5 mt-4 md:flex-row">
-            <Input
+            <InputTwo
               type={'text'}
               placeholder={'Your Country'}
               className={
                 'bg-primary font-medium placeholder:text-white text-white w-full'
               }
             />
-            <Input
+            <InputTwo
               type={'text'}
               placeholder={'Your Number'}
               className={
@@ -100,14 +100,14 @@ const Form = () => {
             />
           </div>
           <div className="flex flex-col justify-between gap-5 mt-4 md:flex-row">
-            <Input
+            <InputTwo
               type={'email'}
               placeholder={'Your Country'}
               className={
                 'bg-primary font-medium placeholder:text-white text-white w-full'
               }
             />
-            <Input
+            <InputTwo
               type={'time'}
               placeholder={'Your Number'}
               className={

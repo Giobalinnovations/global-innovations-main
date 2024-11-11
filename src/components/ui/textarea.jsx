@@ -1,10 +1,18 @@
-import { cn } from '@/lib/utils'
-import React from 'react'
+import * as React from "react"
 
-const Textarea = ({ name, placeholder, className, props }) => {
-    return (
-        <textarea {...props} name={name} placeholder={placeholder} className={cn(`border-2 border-[#C0C0C0] outline-blue-200 w-full rounded-lg px-[25px] py-[18px] min-h-48 bg-background`, className)}></textarea>
-    )
-}
+import { cn } from "@/lib/utils"
 
-export default Textarea
+const Textarea = React.forwardRef(({ className, ...props }, ref) => {
+  return (
+    (<textarea
+      className={cn(
+        "flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+        className
+      )}
+      ref={ref}
+      {...props} />)
+  );
+})
+Textarea.displayName = "Textarea"
+
+export { Textarea }
