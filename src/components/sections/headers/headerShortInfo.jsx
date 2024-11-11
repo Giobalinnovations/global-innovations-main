@@ -44,6 +44,7 @@ const HeaderShortInfo = () => {
             <Link href={'mailto:info@globalinnovations.co.in'}>
               info@globalinnovations.co.in
             </Link>
+            {/*  */}
           </p>
           <p>
             Ph:<Link href={'tel:+919911113576'}>+919911113576</Link>
