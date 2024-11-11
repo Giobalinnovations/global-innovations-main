@@ -17,61 +17,113 @@ const TermsPage = () => {
       <HeaderTwo haveShadow={true} />
       <main className="pt-10 pb-20">
         <div className="container">
-          <h1 className="mb-8 text-4xl font-bold">Terms of Service</h1>
+          <h1 className="mb-8 text-4xl font-bold">Terms and Conditions</h1>
 
-          <div className="space-y-6">
+          <div className="space-y-8">
             <section>
-              <h2 className="mb-4 text-2xl font-semibold">
-                1. Acceptance of Terms
-              </h2>
+              <h2 className="mb-4 text-2xl font-semibold">Terms of Use</h2>
               <p className="text-gray-600">
-                By accessing and using this website, you accept and agree to be
-                bound by the terms and provision of this agreement.
+                Global Innovations welcomes you. Access to our site and our
+                services is subject to the conditions, terms, and notices
+                contained herein. If you do not agree with any part of these
+                terms, we request that you do not use our website and services.
               </p>
             </section>
 
             <section>
-              <h2 className="mb-4 text-2xl font-semibold">2. Use License</h2>
+              <h2 className="mb-4 text-2xl font-semibold">Refund Policy</h2>
               <p className="text-gray-600">
-                Permission is granted to temporarily download one copy of the
-                materials (information or software) on Global Innovations's
-                website for personal, non-commercial transitory viewing only.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="mb-4 text-2xl font-semibold">3. Disclaimer</h2>
-              <p className="text-gray-600">
-                The materials on Global Innovations's website are provided on an
-                'as is' basis. Global Innovations makes no warranties, expressed
-                or implied, and hereby disclaims and negates all other
-                warranties including, without limitation, implied warranties or
-                conditions of merchantability, fitness for a particular purpose,
-                or non-infringement of intellectual property or other violation
-                of rights.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="mb-4 text-2xl font-semibold">4. Limitations</h2>
-              <p className="text-gray-600">
-                In no event shall Global Innovations or its suppliers be liable
-                for any damages (including, without limitation, damages for loss
-                of data or profit, or due to business interruption) arising out
-                of the use or inability to use the materials on Global
-                Innovations's website.
+                Global Innovations provides services that can be of the highest
+                standard to clients. We do not give back, although it is usually
+                under special circumstances where we find that services cannot
+                meet what we offer. In some services, such refunds could be
+                partial as per the services delivered.
               </p>
             </section>
 
             <section>
               <h2 className="mb-4 text-2xl font-semibold">
-                5. Revisions and Errata
+                Intellectual Property Rights
               </h2>
               <p className="text-gray-600">
-                The materials appearing on Global Innovations's website could
-                include technical, typographical, or photographic errors. Global
-                Innovations does not warrant that any of the materials on its
-                website are accurate, complete or current.
+                All content on this website is owned by Global Innovations
+                and/or its licensors, unless otherwise stated. The following
+                includes but is not limited to text, graphics, and other
+                materials. All rights are reserved, and unauthorized use of our
+                intellectual property is strictly prohibited.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="mb-4 text-2xl font-semibold">Restrictions</h2>
+              <p className="text-gray-600">You are not allowed:</p>
+              <ul className="mt-2 ml-6 space-y-2 text-gray-600 list-disc">
+                <li>
+                  Republish material from this website without obtaining a
+                  license from us.
+                </li>
+                <li>Sell, rent, or sublicense any website content.</li>
+                <li>
+                  Duplication, photocopying or reproduction of material from
+                  this site for commercial purposes.
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="mb-4 text-2xl font-semibold">
+                User-Generated Content
+              </h2>
+              <p className="text-gray-600">
+                Global Innovations shall have no responsibility for any content
+                which you may provide on your website or transmit via our
+                services. You agree to hold harmless and indemnify us from and
+                against any and all claims and liabilities arising from your
+                submissions or from third parties' misuse of our services.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="mb-4 text-2xl font-semibold">
+                Reservation of Rights
+              </h2>
+              <p className="text-gray-600">
+                We reserve the right to request that you remove any link to our
+                website or services at any time. You agree to promptly remove
+                any such link upon request.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="mb-4 text-2xl font-semibold">Disclaimer</h2>
+              <p className="text-gray-600">
+                To the fullest extent permitted by law, Global Innovations
+                excludes all representations, warranties, and conditions
+                relating to the website and the use of our services. No direct,
+                indirect, special, or consequential damages arising out of the
+                use of our website or services shall be deemed to be caused by
+                us.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="mb-4 text-2xl font-semibold">
+                Modifications to Terms and Conditions
+              </h2>
+              <p className="text-gray-600">
+                Global Innovations may update the terms and conditions listed
+                here from time to time. Continued use of our website after
+                posting such changes shall constitute acceptance of those
+                changes.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="mb-4 text-2xl font-semibold">Governing Law</h2>
+              <p className="text-gray-600">
+                These terms and conditions are governed by laws prevailing in
+                India. In using our website and services, you submit to the
+                exclusive jurisdiction of the courts in India.
               </p>
             </section>
           </div>

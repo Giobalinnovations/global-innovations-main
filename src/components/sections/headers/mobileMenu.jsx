@@ -57,7 +57,7 @@ const MobileMenu = ({ data }) => {
                       className="flex justify-between items-center text-secondary-foreground dark:text-muted-foreground text-base leading-[100%] py-[11px] px-4 font-semibold z-1 relative after:z-[-1] after:absolute after:left-0 after:bottom-0 after:w-0 after:transition-all after:duration-300 hover:after:w-full after:h-full after:bg-secondary group-hover/subDropdwon:after:text-secondary-foreground"
                     >
                       {lable}
-                      {dropDown.length || megaMenu.length ? (
+                      {dropDown.length > 0 || megaMenu.length > 0 ? (
                         <span>
                           <IoIosArrowDown />
                         </span>
@@ -65,7 +65,7 @@ const MobileMenu = ({ data }) => {
                         ''
                       )}
                     </Link>
-                    {dropDown.length && (
+                    {dropDown.length > 0 && (
                       <ul
                         className={`transition-all duration-500 ${
                           mainDropDownActive === id
@@ -138,7 +138,7 @@ const MobileMenu = ({ data }) => {
 
                     {
                       /* mega menu start */
-                      megaMenu.length && (
+                      megaMenu.length > 0 && (
                         <ul
                           className={`transition-all duration-500 ${
                             mainDropDownActive === id
