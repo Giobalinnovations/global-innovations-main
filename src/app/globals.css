@@ -9,32 +9,36 @@ html {
 @layer base {
   :root {
     --background: #fff;
-    --foreground: #5C6671;
+    --foreground: #5c6671;
 
-    --primary: #2E4DFE;
-    --primary-foreground: #2E4DFE;
+    --primary: #e77fc1;
+    --primary-foreground: #e77fc1;
 
-    --secondary: #6495ED;
+    --secondary: #d2a0cb;
     --secondary-foreground: #fff;
 
-    --muted: #001F3F;
-    --muted-foreground: #001F3F;
+    --muted: #001f3f;
+    --muted-foreground: #001f3f;
 
-    --accent: #E2E7FF;
+    --accent: #e2e7ff;
     /* --accent-foreground: 0 0% 9%; */
 
-    --destructive: #F2F4FB;
+    --destructive: #f2f4fb;
     /* --destructive-foreground: 0 0% 98%; */
 
-    --green: #32A552;
+    --green: #32a552;
     /* --green-foreground:"" */
 
-    --purple: #A22EFE;
+    --purple: #a22efe;
     /* --purple-foreground:"" */
 
-    --red: #FE2E2E;
+    --red: #fe2e2e;
     /* --red-foreground:"" */
-    --background-linear: linear-gradient(180deg, #fff 0%, rgba(226, 231, 255, 0.3) 100%);
+    --background-linear: linear-gradient(
+      180deg,
+      #fff 0%,
+      rgba(226, 231, 255, 0.3) 100%
+    );
     --gray: rgba(46, 77, 254, 0.05);
 
     --border: 0 0% 89.8%;
@@ -45,33 +49,37 @@ html {
   }
 
   .dark {
-    --background: #191F25;
-    --foreground: #717A83;
+    --background: #191f25;
+    --foreground: #717a83;
 
-    --primary: #2E4DFE;
-    --primary-foreground: #2E4DFE;
+    --primary: #e77fc1;
+    --primary-foreground: #e77fc1;
 
-    --secondary: #6495ED;
+    --secondary: #d2a0cb;
     --secondary-foreground: #000;
 
-    --muted: #E2E7FF;
+    --muted: #e2e7ff;
     --muted-foreground: rgb(202, 212, 225);
 
     --accent: #202932;
     /* --accent-foreground: 0 0% 98%; */
 
-    --destructive: #F2F4FB;
+    --destructive: #f2f4fb;
     /* --destructive-foreground: 0 0% 98%; */
 
-    --green: #32A552;
+    --green: #32a552;
     /* --green-foreground:"" */
 
-    --purple: #A22EFE;
+    --purple: #a22efe;
     /* --purple-foreground:"" */
 
-    --red: #FE2E2E;
+    --red: #fe2e2e;
     /* --red-foreground:"" */
-    --background-linear: linear-gradient(180deg, rgba(25, 31, 37, 1) 0%, rgba(32, 41, 50, 0.3) 100%);
+    --background-linear: linear-gradient(
+      180deg,
+      rgba(25, 31, 37, 1) 0%,
+      rgba(32, 41, 50, 0.3) 100%
+    );
     --gray: #202932;
 
     --border: 0 0% 14.9%;
@@ -104,13 +112,17 @@ html {
   }
 
   .linear-text {
-    background: linear-gradient(rgba(46, 77, 254, 0.1) 0%, rgba(28, 46, 152, 0.01) 100%) text;
+    background: linear-gradient(
+        rgba(46, 77, 254, 0.1) 0%,
+        rgba(28, 46, 152, 0.01) 100%
+      )
+      text;
     -webkit-text-fill-color: transparent;
   }
 
   .hover-underline::after {
     position: absolute;
-    content: "";
+    content: '';
     left: 0;
     bottom: -4px;
     width: 0px;
@@ -124,7 +136,8 @@ html {
   }
 
   .multiline-hover {
-    background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95% / 0px 1px no-repeat;
+    background: linear-gradient(to right, currentcolor 0%, currentcolor 100%)
+      0px 95% / 0px 1px no-repeat;
     transition: all 500ms ease;
   }
 
@@ -133,12 +146,16 @@ html {
   }
 
   .landing-bg {
-    background-image: linear-gradient(to right bottom, rgba(46, 77, 254, .05), rgba(46, 77, 254, .05)), url('/images/demos/hero-landing-bg.png'), url('/images/demos/hero-landing-bg2.png');
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(46, 77, 254, 0.05),
+        rgba(46, 77, 254, 0.05)
+      ),
+      url('/images/demos/hero-landing-bg.png'),
+      url('/images/demos/hero-landing-bg2.png');
     background-blend-mode: multiply;
-
   }
 }
-
 
 /* ----- style for counter ---- */
 .index-module_slot__DpPgW {
@@ -189,18 +206,18 @@ html {
 /* ----- testimonial two slider ---- */
 
 /* ----- testimonnial three scroll start ----- */
-[data-dir="top"] {
+[data-dir='top'] {
   --animation-dir: forwards;
 }
 
-[data-speed="fast"] {
+[data-speed='fast'] {
   --animation-duration: 75s;
 }
 
 .scroll-area {
-  transition: all .5s ease-in;
-  animation: scrollTop var(--animation-duration) var(--animation-dir) linear infinite;
-
+  transition: all 0.5s ease-in;
+  animation: scrollTop var(--animation-duration) var(--animation-dir) linear
+    infinite;
 }
 
 .scroll-area:hover {
@@ -227,7 +244,7 @@ html {
   animation-name: fadeInRight;
 }
 
-.fadeinUp-animated{
+.fadeinUp-animated {
   visibility: visible;
   animation-delay: 0ms;
   animation-duration: 2s;
@@ -248,7 +265,7 @@ html {
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d( 0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
   }
 
   100% {
@@ -267,15 +284,12 @@ html {
 
 @media (min-width: 340px) {
   .container {
-    max-width: 100%
+    max-width: 100%;
   }
-
 }
-
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1680px;
   }
-
 }
