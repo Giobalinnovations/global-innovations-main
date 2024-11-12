@@ -87,7 +87,7 @@ html {
     --ring: 0 0% 83.1%;
   }
 }
-
+/* --------- style for all pages --------- */
 @layer base {
   * {
     @apply border-border;
