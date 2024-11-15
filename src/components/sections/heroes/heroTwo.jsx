@@ -35,7 +35,7 @@ const HeroTwo = () => {
                     }}
                   />
                 </Title>
-                <p className="font-bold text-muted-foreground max-w-[170px]">
+                <p className="font-bold text-muted-foreground  sm:max-w-[170px]">
                   Years of Track Record
                 </p>
               </div>
@@ -53,7 +53,7 @@ const HeroTwo = () => {
                   />
                   %
                 </Title>
-                <p className="font-bold text-muted-foreground max-w-[170px]">
+                <p className="font-bold text-muted-foreground sm:max-w-[170px]">
                   Years of Track Record
                 </p>
               </div>
