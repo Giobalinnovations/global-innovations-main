@@ -150,7 +150,7 @@ export const servicesDataContent = [
   {
     id: 2,
     title: 'Social Media Marketing Services',
-    slug: 'social-media-marketing-services',
+    slug: 'social-media-marketing',
     content: {
       pageTitle: {
         pageName: 'Social Media Marketing Services',

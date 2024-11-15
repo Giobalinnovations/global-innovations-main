@@ -18,10 +18,13 @@ export async function generateMetadata({ params }) {
   return {
     title: service?.title || 'Service Details',
     description: service?.description || 'Service details page',
-    openGraph: {
-      title: service?.title || 'Service Details',
-      description: service?.description || 'Service details page',
-      type: 'website',
+    // openGraph: {
+    //   title: service?.title || 'Service Details',
+    //   description: service?.description || 'Service details page',
+    //   type: 'website',
+    // },
+    alternates: {
+      canonical: `/services/${slug}`,
     },
   };
 }
