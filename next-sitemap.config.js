@@ -2,7 +2,7 @@ const servicesData = require('./src/lib/sitemapUtils');
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://globalinnovations.co.in',
+  siteUrl: process.env.SITE_URL || 'https://www.globalinnovations.co.in',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   robotsTxtOptions: {
