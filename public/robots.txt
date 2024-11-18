@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://globalinnovations.co.in
+Host: https://www.globalinnovations.co.in
 
 # Sitemaps
-Sitemap: https://globalinnovations.co.in/sitemap.xml
+Sitemap: https://www.globalinnovations.co.in/sitemap.xml
