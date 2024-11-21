@@ -12,6 +12,38 @@ import WebDevelopment from '../../../public/icons/webDevelopment';
 import PrAgency from '../../../public/icons/prAgency';
 import MediaBuying from '../../../public/icons/mediaBuying';
 import SearchEngineMarketing from '../../../public/icons/searchEngineMarketing';
+import {
+  LayoutGrid,
+  LineChart,
+  Clock,
+  RefreshCw,
+  CircleDot,
+  Share2,
+  Search,
+  FileText,
+  Mail,
+  MapPin,
+  MousePointer2,
+  Users,
+  MessageSquare,
+  Target,
+  Calendar,
+  Handshake,
+  Settings,
+  Zap,
+  Link,
+  Globe,
+  Sparkles,
+  Code,
+  Smartphone,
+  Menu,
+  Image,
+  AlertTriangle,
+  Heart,
+  Eye,
+  HandshakeIcon,
+  DollarSign,
+} from 'lucide-react';
 
 export const servicesDataTwo = [
   {
@@ -98,19 +130,67 @@ export const servicesDataContent = [
           items: [
             {
               id: 1,
-              text: "A holistic strategy: We deliver end-to-end digital marketing solutions that are tailored to your brand's unique needs, meaning that all channels will always be cohesive and integrated.",
+              icon: LayoutGrid,
+              title: 'A holistic strategy',
+              text: "We deliver end-to-end digital marketing solutions that are tailored to your brand's unique needs, meaning that all channels will always be cohesive and integrated.",
             },
             {
               id: 2,
-              text: 'Data-Driven Results: Our strategies are found in rigorous analytics and data-driven insights to ensure each campaign yields measurable results.',
+              icon: LineChart,
+              title: 'Data-Driven Results',
+              text: 'Our strategies are found in rigorous analytics and data-driven insights to ensure each campaign yields measurable results.',
             },
             {
               id: 3,
+              icon: Clock,
+              title: 'Years of Expertise',
               text: 'Years of experience in different fields have made our team effective in developing marketing strategies which ensure it really touches the hearts of your audience and pushes forward growth.',
             },
             {
               id: 4,
-              text: 'Continuous Optimization: Monitor and refine strategies to achieve maximum ROI, through continuous campaign adjustment ensuring peak performance based on real-time information.',
+              icon: RefreshCw,
+              title: 'Continuous Optimization',
+              text: 'Monitor and refine strategies to achieve maximum ROI, through continuous campaign adjustment ensuring peak performance based on real-time information.',
+            },
+          ],
+        },
+        list2: {
+          title: 'Essential Digital Marketing Tips To Grow Your Business',
+          items: [
+            {
+              icon: Share2,
+              title: 'Engage on Social Media Consistently',
+              text: 'Post on an agreement schedule on Facebook, Instagram, and LinkedIn. Engaging with your followers helps them increase loyalty to your brand and its online presence.',
+            },
+            {
+              icon: Search,
+              title: 'Optimize your website for SEO',
+              text: 'You can make your website search engine optimized by using relevant keywords and meta descriptions, replete with quality content. Such a website tends to attract more organic traffic while ensuring enhanced visibility on search engines.',
+            },
+            {
+              icon: FileText,
+              title: 'Invest in Quality Content Marketing',
+              text: 'If you can produce quality and valuable content, then you are attracting people and keeping them around. Create informative blogs, videos, and infographics that tell people what they need to know.',
+            },
+            {
+              icon: Mail,
+              title: 'Use Email Marketing for Retaining Existing Customers',
+              text: 'Email marketing campaigns will help you nurture the relationship with your existing customers. Keep in touch through updates, special offers, or helpful resources that keep them abreast of your brand.',
+            },
+            {
+              icon: MapPin,
+              title: 'Leverage Local SEO',
+              text: 'Incorporate location-specific keywords and a Google Business Profile in the local search optimization process. Local SEO brings you those customers who are specifically in your locality and actively look for services like yours.',
+            },
+            {
+              icon: MousePointer2,
+              title: 'Use Pay-per-click Ads for Targeted Reach',
+              text: 'PPC ads on Google and other social media enable you to reach a targeted section of potential customers precisely. Roll out carefully and constantly calibrate your moves by tweaking your ROI.',
+            },
+            {
+              icon: Users,
+              title: 'Team up with industry experts such as Global Innovation',
+              text: 'For particular digital marketing support, work with professionals in this regard, such as Global Innovation. Tailored solutions, delivered by the professionals, are going to optimize your campaigns and lead to impactful results.',
             },
           ],
         },
@@ -166,19 +246,72 @@ export const servicesDataContent = [
           items: [
             {
               id: 1,
-              text: 'Platform Expertise: Whether it is Facebook, Instagram, LinkedIn, or Twitter, we have good knowledge of major platforms and know how to use each of these for maximum delivery.',
+              icon: Share2,
+              title: 'Platform Expertise',
+              text: 'Whether it is Facebook, Instagram, LinkedIn, or Twitter, we have good knowledge of major platforms and know how to use each of these for maximum delivery.',
             },
             {
               id: 2,
-              text: 'Creative Campaigns: Our creative team will develop interesting content that really talks to your audience, fostering great community connections and engagement.',
+              icon: FileText,
+              title: 'Creative Campaigns',
+              text: 'Our creative team will develop interesting content that really talks to your audience, fostering great community connections and engagement.',
             },
             {
               id: 3,
-              text: 'Targeted Advertisement-Advanced targeting options ensure that ads reach the right people, leading to more conversion and better brand recognition.',
+              icon: Users,
+              title: 'Targeted Advertisement',
+              text: 'Advanced targeting options ensure that ads reach the right people, leading to more conversion and better brand recognition.',
             },
             {
               id: 4,
-              text: "Analytics-Driven Insights: We monitor key performance metrics to gauge how you're progressing in your social media efforts, making adjustments as necessary for continued improvement.",
+              icon: LineChart,
+              title: 'Analytics-Driven Insights',
+              text: "We monitor key performance metrics to gauge how you're progressing in your social media efforts, making adjustments as necessary for continued improvement.",
+            },
+          ],
+        },
+        list2: {
+          title: 'Essential Social Media Marketing Tips to Grow Your Business',
+          items: [
+            {
+              icon: Users,
+              title: 'Identify and Understand Your Target Audience',
+              text: 'Research the demographics, preferences, and online behavior of your audience. You will know who you are talking to and create content that resonates and encourages engagement with them.',
+            },
+            {
+              icon: FileText,
+              title: 'Create High-Quality Relevant Content',
+              text: 'Focus on delivering value through well-crafted content, be it a tutorial, a testimonial of a customer, or even insights into the industry. Consistent, engaging content will build trust and keep those followers coming back for more.',
+            },
+            {
+              icon: MessageSquare,
+              title: 'Interact with Your Audience Often',
+              text: 'Engage with the comments, messages, and mentions. These interactions help boost customer loyalty and encourage a civilized online society.',
+            },
+            {
+              icon: Target,
+              title: 'Leverage Paid Social Media Ads',
+              text: 'Paid ads on Facebook, Instagram, and LinkedIn can help increase your reach and ensure that your message is sent to the right people. Remember to incorporate ad targeting so that your content reaches those who have the greatest potential to react.',
+            },
+            {
+              icon: LineChart,
+              title: 'Tune into the Performance and Adjust',
+              text: 'Use Facebook Insights or Instagram Analytics to measure engagement, reach, and conversions. This will help you learn from those metrics, adjust your approach, and improve your campaigns over time.',
+            },
+            {
+              icon: Share2,
+              title: 'Use Influencers to Reach More People',
+              text: 'You can promote your business by linking up with influencers who share your brand vision. When you link up with the right influencers, they can introduce your products to a wider audience.',
+            },
+            {
+              icon: Calendar,
+              title: 'Develop a posting schedule',
+              text: 'The constant posting helps remind your brand to the followers mind. A social media calendar will help you to plan posts in such a way that consistency is maintained.',
+            },
+            {
+              icon: Handshake,
+              title: 'Work with experts like Global Innovation',
+              text: 'Partner with Global Innovation to create unique strategies to help you coordinate your activities, reach the right people, and garner the best possible outcome.',
             },
           ],
         },
@@ -226,24 +359,73 @@ export const servicesDataContent = [
         title: 'What is SEO?',
         shortDescription: `SEO services strive to make the website more visible on the search engines. SEO services apply on-page and off-page keyword optimization in addition to link-building strategies that yield an increase in organic traffic, improved ranking, and overall user experience- the route through which businesses connect effectively with the target audience.`,
         list: {
-          title: `Amplify Your Brand's Visibility With Global Innovations Top-Tier SEO Services And Solutions`,
-          description: `Why Choose Global Innovations as your SEO Partner?`,
+          title:
+            "Amplify Your Brand's Visibility With Global Innovations Top-Tier SEO Services And Solutions",
+          description: 'Why Choose Global Innovations as your SEO Partner?',
           items: [
             {
               id: 1,
-              text: 'Proven SEO Techniques: Our team uses leading industry SEO practices that will make organic search rankings improve and have your website rank high up in the search results for your keywords.',
+              icon: Search,
+              title: 'Proven SEO Techniques',
+              text: 'Our team uses leading industry SEO practices that will make organic search rankings improve and have your website rank high up in the search results for your keywords.',
             },
             {
               id: 2,
-              text: 'Customized SEO Plans: Our SEO strategy is customized for your business, ensuring that it meets your needs and helps you outperform competitors.',
+              icon: Settings,
+              title: 'Customized SEO Plans',
+              text: 'Our SEO strategy is customized for your business, ensuring that it meets your needs and helps you outperform competitors.',
             },
             {
               id: 3,
+              icon: LayoutGrid,
+              title: 'Wide handling',
               text: 'We handle everything within an optimization scope, from keyword research and on-page SEO to link building and technical SEO for a lasting impact.',
             },
             {
               id: 4,
-              text: 'Transparency and Reporting. Detailed reports are provided at each point of time outlining the outcome of the Search Engine Optimization. You are regularly kept in the know regarding development as well as return of investment.',
+              icon: FileText,
+              title: 'Transparency and Reporting',
+              text: 'Detailed reports are provided at each point of time outlining the outcome of the Search Engine Optimization. You are regularly kept in the know regarding development as well as return of investment.',
+            },
+          ],
+        },
+        list2: {
+          title: 'Essential SEO Tips To Grow Your Business',
+          items: [
+            {
+              icon: Search,
+              title: 'Conduct Extreme Keyword Research',
+              text: 'You will find relevant words for your niche using Google Keyword Planner and SEMrush. Targeting the right terms means that your website will rank for what people are looking for.',
+            },
+            {
+              icon: Settings,
+              title: "Optimize Your Website's On-Page Elements",
+              text: 'Meta titles, descriptions, headers, and alt text on images are some of the areas you are going to work on to make your website Search Engine-friendly. An optimized page means a better user experience and ranking potential.',
+            },
+            {
+              icon: FileText,
+              title: 'Write Engaging, Instructive Content',
+              text: 'Share content that delivers real value to your intended audience. Targeted, keyword-enhanced blog posts, guides, and how-to articles are some of the ways to establish authority in your niche through your website.',
+            },
+            {
+              icon: Zap,
+              title: "Speed Up Your Website's Loading Time",
+              text: 'A slow website can make users leave and even affect your rankings. Tools like Google PageSpeed Insights help find and fix issues slowing down your site.',
+            },
+            {
+              icon: MapPin,
+              title: 'Invest in Local SEO for Local Visibility',
+              text: 'Local SEO is imperative when businesses cater to a specific locality. Claim your Google Business Profile and embed location-centric keywords to attract local customers.',
+            },
+            {
+              icon: Link,
+              title: 'Acquire Relevant Good Quality Backlinks',
+              text: 'Obtain backlinks by collaborating with the most popular websites. Guest blogging, partnerships, and inclusion of your website in directories can be done for increasing the authority and credibility of the website.',
+            },
+            {
+              icon: Users,
+              title: 'Work with Experts like Global Innovation',
+              text: 'Partner with Global Innovation for tailored strategies to streamline your campaigns, attract the right audience, and maximize results.',
             },
           ],
         },
@@ -292,24 +474,74 @@ export const servicesDataContent = [
         title: 'What is Influencer marketing?',
         shortDescription: `Influencer marketing services are basic in that they refer to the act of partnering with online influencers so that they can promote their products or services to your target audience. This technique makes use of the credibility and reach of the influencer to create authentic brand awareness. Therefore, it involves finding the right influencers, campaign planning, content creation, and performance tracking.`,
         list: {
-          title: `Empowering Your Business To Garner The Attention It Deserves, And More.`,
-          description: `Why Choose Global Innovations as your Influencer Marketing Partner?`,
+          title:
+            'Empowering Your Business To Garner The Attention It Deserves, And More.',
+          description:
+            'Why Choose Global Innovations as your Influencer Marketing Partner?',
           items: [
             {
               id: 1,
-              text: 'Strategic Partnerships: We connect your brand with the right influencers who are in line with your values and target audience to ensure authentic and effective collaborations.',
+              icon: Users,
+              title: 'Strategic Partnerships',
+              text: 'We connect your brand with the right influencers who are in line with your values and target audience to ensure authentic and effective collaborations.',
             },
             {
               id: 2,
+              icon: Share2,
+              title: 'Amplified campaigns',
               text: 'It can help you have the best-suited campaigns for an amplified brand message through marketing methods such as sponsored posts and collaborative content or even product reviews.',
             },
             {
               id: 3,
+              icon: LineChart,
+              title: 'Optimal tracking',
               text: 'This will ensure we track and look at the performances of all our influencer campaigns, making any necessary strategy changes in real-time for optimal effect.',
             },
             {
               id: 4,
-              text: 'Wide Network: We can scale your campaign to reach a global audience with access to a wide network of influencers across multiple industries.',
+              icon: Globe,
+              title: 'Wide Network',
+              text: 'We can scale your campaign to reach a global audience with access to a wide network of influencers across multiple industries.',
+            },
+          ],
+        },
+        list2: {
+          title: 'Essential Influencer Marketing Tips to Grow Your Business',
+          items: [
+            {
+              icon: Target,
+              title: 'Define Clear Objectives for Your Campaign',
+              text: 'Define clear goals before you start. Whether it is to build more brand awareness, get some sales, or grow your social presence, clear goals help make focused efforts clear.',
+            },
+            {
+              icon: Users,
+              title: 'Choose the Best Influencers',
+              text: 'Work with individuals whose audience aligns with the targeted audience you have in mind for your campaign. Focus on authenticity and engagement more than followers as the center of meaningful results.',
+            },
+            {
+              icon: Handshake,
+              title: 'Focus on long-term partnerships',
+              text: 'Collaborate with influencers for long-term engagements where there is a win-win scenario that yields trust and authenticity. The long-term collaborations further help you to imprint your brand message with the audience.',
+            },
+            {
+              icon: Share2,
+              title: 'Leverage micro-influencers to reach the niche audience',
+              text: 'Micro-influencers usually have very engaged followers in niches. Their personal approach often ensures high engagement and conversions at a relatively lower cost.',
+            },
+            {
+              icon: Sparkles,
+              title: 'Empower them to be creative',
+              text: 'Let social media influencers take their initiative in the post. This authenticity appeals more to their audience, thereby strengthening your campaign.',
+            },
+            {
+              icon: LineChart,
+              title: 'Track Campaign Performance',
+              text: 'Take measurements involving engagement, reach, and ROI using analytics tools. Monitoring metrics helps you access campaign success and optimize future strategies.',
+            },
+            {
+              icon: Users,
+              title: 'Work with experts like Global Innovation',
+              text: 'Partner with Global Innovation for tailored strategies to streamline your campaigns, attract the right audience, and maximize results.',
             },
           ],
         },
@@ -359,24 +591,74 @@ export const servicesDataContent = [
         title: 'What is web development?',
         shortDescription: `Web development services include building, designing, and maintaining websites and web applications. This is both front-end and back-end development, UX design, e-commerce solutions, and content management systems. Their final aim is to design and develop functionally effective, responsive, and user-friendly websites for businesses.`,
         list: {
-          title: `Empowering Growth through Scalable and Agile Software Development`,
-          description: `Why Choose Global Innovations as your web development Partner?`,
+          title:
+            'Empowering Growth through Scalable and Agile Software Development',
+          description:
+            'Why Choose Global Innovations as your web development Partner?',
           items: [
             {
               id: 1,
-              text: 'Custom Solutions: We build custom websites that are uniquely designed to achieve the varied goals of a business and give a unique digital presence which differentiates the competition.',
+              icon: Code,
+              title: 'Custom Solutions',
+              text: 'We build custom websites that are uniquely designed to achieve the varied goals of a business and give a unique digital presence which differentiates the competition.',
             },
             {
               id: 2,
-              text: 'Responsive & User-Friendly: Our websites are mobile-responsive, and user experience is what creates a smooth navigation and greater engagement.',
+              icon: Smartphone,
+              title: 'Responsive & User-Friendly',
+              text: 'Our websites are mobile-responsive, and user experience is what creates a smooth navigation and greater engagement.',
             },
             {
               id: 3,
+              icon: Search,
+              title: 'SEO Friendly',
               text: 'Design SEO-friendly websites from scratch, but your website ranks well in search engines and automatically attracts organic traffic.',
             },
             {
               id: 4,
+              icon: Settings,
+              title: 'Ongoing Support',
               text: 'We support you from conceptualization to the ongoing maintenance and updates to ensure that your website grows with your business.',
+            },
+          ],
+        },
+        list2: {
+          title: 'Essential Website Development Tips to Grow Your Business',
+          items: [
+            {
+              icon: Smartphone,
+              title: 'Mobile-Friendly Design',
+              text: 'Most of the visitors are going to arrive at your website on their mobile devices, so it should, at worst, be at least totally responsive. A mobile-friendly design enhances user experience and pulls in higher search engine rankings.',
+            },
+            {
+              icon: Zap,
+              title: 'Fast Loading Speeds',
+              text: 'The last thing you want is a slow site that drives visitors away. Use Google PageSpeed Insights or other optimization tools to reduce the length of time it takes to load and keep users engaged for better SEO.',
+            },
+            {
+              icon: Menu,
+              title: 'Easy Navigation',
+              text: 'Use simple site architecture and intuitive menus for navigation. A clear path to finding what they need will quickly get users through the site, increasing usability and reducing bounce rates.',
+            },
+            {
+              icon: Image,
+              title: 'Invest in High-Quality Visuals',
+              text: 'Use professional images and graphics or videos on your website. Your website should be appealing to look at, establishing credibility with user retention.',
+            },
+            {
+              icon: Search,
+              title: 'SEO Optimization',
+              text: 'Ensure that your website contains targeted keywords, meta descriptions, and alt tags. The best SEO methods improve the chances of visibility for your business and catch organic traffic for your business.',
+            },
+            {
+              icon: MousePointer2,
+              title: 'Use Clear Call-to-Actions',
+              text: 'Your website must have clear call-to-actions such as "Get a Quote" or "Contact Us." Appropriate use of CTAs on your website at strategic places will encourage users to make the desired action on your website.',
+            },
+            {
+              icon: Users,
+              title: 'Work with Experts like Global Innovation',
+              text: 'Partner with Global Innovation for tailored strategies to streamline your campaigns, attract the right audience, and maximize results.',
             },
           ],
         },
@@ -426,24 +708,73 @@ export const servicesDataContent = [
         title: 'What is public relation?',
         shortDescription: `A Public Relations (PR) agency specializes in handling and strengthening the public image of the brand. Some of its services include media relations, press releases, crisis management, event planning, and reputation management, all focusing on creating good publicity by building strong relationships between a brand and its audience.`,
         list: {
-          title: `Raise Your Brand's Voice With Global Innovations Gurgaon's Best PR Agency`,
-          description: `Why Choose Global Innovations as your PR Partner?`,
+          title:
+            "Raise Your Brand's Voice With Global Innovations Gurgaon's Best PR Agency",
+          description: 'Why Choose Global Innovations as your PR Partner?',
           items: [
             {
               id: 1,
-              text: 'Brand reputation management: Our PR strategies will help in creating and sustaining the right positive image of your brand in order to earn long-term credibility and trust from the target audience.',
+              icon: Shield,
+              title: 'Brand reputation management',
+              text: 'Our PR strategies will help in creating and sustaining the right positive image of your brand in order to earn long-term credibility and trust from the target audience.',
             },
             {
               id: 2,
-              text: `Media Outreach: We utilize influential connections with leading media sources to secure press coverage and amplify your brand's profile among the targeted audiences of the publication.`,
+              icon: Share2,
+              title: 'Media Outreach',
+              text: "We utilize influential connections with leading media sources to secure press coverage and amplify your brand's profile among the targeted audiences of the publication.",
             },
             {
               id: 3,
-              text: 'Crisis Management Our team can handle crisis communications, ensuring your brand stays safe in sensitive times.',
+              icon: AlertTriangle,
+              title: 'Crisis Management',
+              text: 'Our team can handle crisis communications, ensuring your brand stays safe in sensitive times.',
             },
             {
               id: 4,
-              text: 'Storytelling Expertise: We help craft compelling brand stories that resonate with the public and resonate with target audiences, helping them build more meaningful relationships.',
+              icon: MessageSquare,
+              title: 'Storytelling Expertise',
+              text: 'We help craft compelling brand stories that resonate with the public and resonate with target audiences, helping them build more meaningful relationships.',
+            },
+          ],
+        },
+        list2: {
+          title: 'Essential PR Tips to Grow Your Business',
+          items: [
+            {
+              icon: MessageSquare,
+              title: 'Define Your Brand Message Clearly',
+              text: 'Create a strong, consistent message that resonates with your target audience. Let your brand message be one of those messages that will help differentiate you from others, making the customer trust you.',
+            },
+            {
+              icon: Share2,
+              title: 'Social Media Usage',
+              text: 'Use social media to amplify PR efforts. You can interact with your target audience, post relevant updates, and publish content featuring your brands strengths. This is a good and cost-effective way of reaching a broad audience.',
+            },
+            {
+              icon: Users,
+              title: 'Build Media Relationships',
+              text: 'Developing a personal connection with journalists, influencers, or other media professionals will increase your chances of getting successful coverage for your business. Pitching on the personal level as well as continuous engagement with the media can boost your stories in the mainstream.',
+            },
+            {
+              icon: FileText,
+              title: 'Highlight Your Industry Expertise Using Content',
+              text: 'Blogging, whitepapers, guest writing, or other content can be used to present valuable insights. Thought leadership pieces position your business as an authority in the marketplace while engaging trust and interest among your audience.',
+            },
+            {
+              icon: Heart,
+              title: 'Using Storytelling for Humanizing Your Brand',
+              text: 'Use storytelling in your PR; this way, you will communicate with your audience at an emotional level. This might make your brand more relatable and memorable by discussing what customers say about it, the journey of your brand, or events at work.',
+            },
+            {
+              icon: Eye,
+              title: 'Online Reputation Tracking',
+              text: 'Track any mentions, reviews, or comments online regarding your brand. Responsiveness to negative feedback in a timely and professional manner shows one being accountable and committed toward the satisfaction of the customer.',
+            },
+            {
+              icon: Users,
+              title: 'Work with experts like Global Innovation',
+              text: 'Partner with Global Innovation for tailored strategies to streamline your campaigns, attract the right audience, and maximize results.',
             },
           ],
         },
@@ -460,8 +791,8 @@ export const servicesDataContent = [
           },
           {
             id: 'three',
-            question: `How would you measure a PR campaign's success?',
-            ans: 'Success is measured through media coverage, audience engagement, and sentiment analysis and their resultant effects on brand awareness and sales.`,
+            question: "How would you measure a PR campaign's success?",
+            ans: 'Success is measured through media coverage, audience engagement, and sentiment analysis and their resultant effects on brand awareness and sales.',
           },
           {
             id: 'four',
@@ -491,24 +822,74 @@ export const servicesDataContent = [
         title: 'What is Media buying?',
         shortDescription: `A media buying service buys ad space through various media such as television, radio, digital media, or print media. A media buying company strategizes placing advertisements to maximally reach and engage people of their target demographic. This would mean audience analysis, budgeting, and campaign optimization with the best possible ROI.`,
         list: {
-          title: `Strategic Media Buying Services For Effective Marketing Campaigns`,
-          description: `Why Choose Global Innovations as your Media buying Partner?`,
+          title:
+            'Strategic Media Buying Services For Effective Marketing Campaigns',
+          description:
+            'Why Choose Global Innovations as your Media buying Partner?',
           items: [
             {
               id: 1,
-              text: 'Strategic Ad Placement: We use data-driven insights to buy media space that will ensure your ads reach the most relevant audience at the right time, increasing the effectiveness of your campaigns.',
+              icon: Target,
+              title: 'Strategic Ad Placement',
+              text: 'We use data-driven insights to buy media space that will ensure your ads reach the most relevant audience at the right time, increasing the effectiveness of your campaigns.',
             },
             {
               id: 2,
-              text: 'Cross-Platform Buying: Whether digital, print, TV, or radio, we optimize media buying across all platforms to maximize reach and impact.',
+              icon: LayoutGrid,
+              title: 'Cross-Platform Buying',
+              text: 'Whether digital, print, TV, or radio, we optimize media buying across all platforms to maximize reach and impact.',
             },
             {
               id: 3,
-              text: 'Transparent Campaigns: We are transparent; hence you shall always be informed of where your budget is being spent and its performance.',
+              icon: Eye,
+              title: 'Transparent Campaigns',
+              text: 'We are transparent; hence you shall always be informed of where your budget is being spent and its performance.',
             },
             {
               id: 4,
-              text: 'ROI Focused: We focus on making the best return on investment, which is done by always analyzing and refining ad campaigns for the best performance.',
+              icon: LineChart,
+              title: 'ROI Focused',
+              text: 'We focus on making the best return on investment, which is done by always analyzing and refining ad campaigns for the best performance.',
+            },
+          ],
+        },
+        list2: {
+          title: 'Essential Media Buying Tips to Grow Your Business',
+          items: [
+            {
+              icon: Users,
+              title: 'Identification of Target Audience',
+              text: 'One of the first steps in choosing media channels is to identify what your target audience likes, does, and looks like. Tailor your campaign to match the most relevant audience for better conversion rates.',
+            },
+            {
+              icon: Target,
+              title: 'Establish Clear Goals and KPIs',
+              text: 'This involves setting concrete goals, be it, for instance, the creation of brand awareness or generating lead conversions, and then defining measurable KPIs. It helps you track the effectiveness of your media buying strategy and make decisions based on facts.',
+            },
+            {
+              icon: LayoutGrid,
+              title: 'Diversify Your Media Channels',
+              text: 'Find a diversified mix of media channels like TV, radio, digital, and print. Each of these platforms has strengths that can be reached with different audiences.',
+            },
+            {
+              icon: HandshakeIcon,
+              title: 'Negotiate Better Rates with Media Providers',
+              text: 'With effective media buying, a lot of negotiation goes into the process. Building relationships with your media providers helps you get the best rates, thereby maximizing your spend on advertising. Do not ever be afraid to ask for discounts or value from your media buys.',
+            },
+            {
+              icon: LineChart,
+              title: 'Performance Tracking and Analysis',
+              text: 'Regularly monitor and analyze your campaign performance to track trends and areas for improvement. The analysis of that data will enable you to create more campaigns, which will help serve to further expand your business.',
+            },
+            {
+              icon: Image,
+              title: 'Creative Asset Optimization',
+              text: 'Your creatives, such as ads, banners, or videos, should be of high quality and interesting to the audience, relating perfectly well with the platform it will appear on. Creatives are optimized, which leads to better engagement and a high return on investment (ROI).',
+            },
+            {
+              icon: Users,
+              title: 'Work with experts like Global Innovation',
+              text: 'Partner with Global Innovation for tailored strategies to streamline your campaigns, attract the right audience, and maximize results.',
             },
           ],
         },
@@ -557,24 +938,75 @@ export const servicesDataContent = [
         title: 'What is Search Engine Marketing?',
         shortDescription: `SEM is paid advertising through search engines like Google and Bing using pay-per-click (PPC). It involves keyword research, ad creation, and bid management to drive targeted traffic to websites. The aim of SEM services is to enhance visibility in search results for immediate leads or sales.`,
         list: {
-          title: `Manifest The Might Of SEM With Global Innovations: Your Trusted SEM Agency`,
-          description: `Why Choose Global Innovations as your Search Engine Marketing Partner?`,
+          title:
+            'Manifest The Might Of SEM With Global Innovations: Your Trusted SEM Agency',
+          description:
+            'Why Choose Global Innovations as your Search Engine Marketing Partner?',
           items: [
             {
               id: 1,
+              icon: Target,
+              title: 'Targeted SEM Campaigns',
               text: 'We make and help manage targeted SEM campaigns, commonly known as PPC, providing immediate traffic and high quality leads for your business.',
             },
             {
               id: 2,
-              text: 'Keyword Research & Optimization: We do full keyword research to ensure your ads target the most relevant search terms, maximizing conversion rates.',
+              icon: Search,
+              title: 'Keyword Research & Optimization',
+              text: 'We do full keyword research to ensure your ads target the most relevant search terms, maximizing conversion rates.',
             },
             {
               id: 3,
-              text: 'Cost-Effective Strategy : Our goal is always to make your advert bidding strategy cost-effective and maximize your ad budget for the most effective spending.',
+              icon: DollarSign,
+              title: 'Cost-Effective Strategy',
+              text: 'Our goal is always to make your advert bidding strategy cost-effective and maximize your ad budget for the most effective spending.',
             },
             {
               id: 4,
-              text: 'Performance Analytics: Our detailed report and analysis show you what your SEM campaigns are about, so we can come up with strategies to make better results.',
+              icon: LineChart,
+              title: 'Performance Analytics',
+              text: 'Our detailed report and analysis show you what your SEM campaigns are about, so we can come up with strategies to make better results.',
+            },
+          ],
+        },
+        list2: {
+          title: 'Essential Media Buying Tips to Grow Your Business',
+          items: [
+            {
+              icon: Search,
+              title: 'Conduct In-depth Keyword Research',
+              text: 'Keyword research forms the foundation of a successful SEM strategy. Discover how you can utilize the Google Keyword Planner to identify relevant, high-traffic keywords for your business that have the guarantee of ads being delivered to the appropriate people.',
+            },
+            {
+              icon: FileText,
+              title: 'Ad Copy Optimization for Relevance and Readability',
+              text: 'Craft compelling, clear, and action-oriented ad copy. Ensure that it matches the search intent of your user and contains strong CTAs that prompt users to click on your ads.',
+            },
+            {
+              icon: Target,
+              title: 'Target the Right Audience with Precision',
+              text: 'Use targeting options such as demographics, location, device, and interests to make sure your ads reach the right audience. The more precision you use in targeting, the better your ROI will be.',
+            },
+            {
+              icon: MousePointer2,
+              title: 'Optimize Landing Pages for Conversion',
+              text: 'Ensure that your landing pages are optimized for conversions of leads and customers. A page that loads quickly, is mobile-friendly, and has clear messaging and a simple navigational structure can really make a difference in conversion rates.',
+            },
+            {
+              icon: LineChart,
+              title:
+                'Monitor Campaigns Frequently for Performance Optimization',
+              text: 'Monitor such metrics as CTR, conversion rates, and CPC. Use this information to optimize your campaigns, test variation ad copy, and ensure overall campaign performance.',
+            },
+            {
+              icon: RefreshCw,
+              title: 'Leverage Retargeting to Get Back Potential Clients',
+              text: 'Retargeting ensures that the ads are shown to users who have, in the first place, interacted with your website but failed to convert. Remember, it increases chances of increasing conversions; it just reminds the users about your products or services.',
+            },
+            {
+              icon: Users,
+              title: 'Work with Experts like Global Innovation',
+              text: 'Partner with Global Innovation for tailored strategies to streamline your campaigns, attract the right audience, and maximize results.',
             },
           ],
         },

@@ -10,6 +10,20 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import SideBarServices from '../sideBarServices';
+import {
+  LayoutGrid,
+  LineChart,
+  Clock,
+  RefreshCw,
+  CircleDot,
+  Share2,
+  Search,
+  FileText,
+  Mail,
+  MapPin,
+  MousePointer2,
+  Users,
+} from 'lucide-react';
 
 const ServiceArtical = ({ data, slug }) => {
   return (
@@ -44,26 +58,116 @@ const ServiceArtical = ({ data, slug }) => {
               <div className="pt-7.5">
                 <p>{data?.content?.servicesArticle?.list?.description}</p>
               </div>
-              <ul className="pt-7.5 flex flex-col gap-[15px]">
+              <div className="pt-7.5 grid md:grid-cols-2 grid-cols-1 gap-7.5">
                 {data?.content?.servicesArticle?.list?.items?.map(
-                  ({ id, text }) => {
+                  ({ id, text, title, icon: Icon }) => {
                     return (
-                      <li className="flex items-center gap-2" key={id}>
-                        <Image
-                          src={'/images/shapes/check-icon-blue.svg'}
-                          width={20}
-                          height={20}
-                          alt="check-icon"
-                        />
-                        <span>{text}</span>
-                      </li>
+                      <div
+                        key={id}
+                        className="bg-gray rounded-[15px] p-6 hover:shadow-lg transition-all duration-300"
+                      >
+                        <div className="flex flex-col gap-4">
+                          <div className="bg-primary/10 w-14 h-14 rounded-[10px] flex justify-center items-center">
+                            {Icon && <Icon className="w-6 h-6 text-primary" />}
+                          </div>
+                          <div>
+                            <h4 className="mb-2 text-lg font-bold text-primary-foreground">
+                              {title}
+                            </h4>
+                            <p className="text-sm leading-relaxed text-muted-foreground">
+                              {text}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     );
                   }
                 )}
-              </ul>
+              </div>
               <div className="pt-7.5"></div>
             </div>
             {/* list end  */}
+
+            {/* list2 - Digital Marketing Tips */}
+            <div className="pt-15">
+              <Title size={'4xl'}>
+                {data?.content?.servicesArticle?.list2?.title}
+              </Title>
+
+              <div className="pt-7.5 relative">
+                {/* Vertical dotted line - visible on all screens */}
+                <div className="absolute left-[17px] top-[45px] bottom-8 border-l-2 border-dashed border-primary/20" />
+
+                <div className="flex flex-col gap-10">
+                  {data?.content?.servicesArticle?.list2?.items?.map(
+                    (item, index) => (
+                      <div key={index} className="group">
+                        {/* Desktop layout */}
+                        <div className="items-start hidden gap-6 md:flex">
+                          {/* Circle container with icon */}
+                          <div className="relative shrink-0">
+                            <div
+                              className="w-[35px] h-[35px] rounded-full bg-white border-2
+                            border-primary flex items-center justify-center z-10 relative
+                            group-hover:scale-105 transition-transform"
+                            >
+                              {item.icon && (
+                                <item.icon className="w-5 h-5 text-primary" />
+                              )}
+                            </div>
+                          </div>
+
+                          {/* Content - Desktop */}
+                          <div
+                            className="flex-1 bg-gray rounded-[15px] p-6 hover:shadow-lg
+                          transition-all duration-300"
+                          >
+                            <h3 className="mb-3 text-xl font-bold text-primary-foreground">
+                              {item.title}
+                            </h3>
+                            <p className="leading-relaxed text-muted-foreground">
+                              {item.text}
+                            </p>
+                          </div>
+                        </div>
+
+                        {/* Mobile layout */}
+                        <div className="flex md:hidden">
+                          <div className="relative shrink-0">
+                            <div
+                              className="w-[35px] h-[35px] rounded-full bg-white border-2
+                            border-primary flex items-center justify-center z-10 relative
+                            shadow-sm"
+                            >
+                              {item.icon && (
+                                <item.icon className="w-5 h-5 text-primary" />
+                              )}
+                            </div>
+                          </div>
+
+                          {/* Content - Mobile */}
+                          <div
+                            className="flex-1 bg-gray rounded-[15px] p-5 hover:shadow-lg
+                          transition-all duration-300 ml-6"
+                          >
+                            <h3
+                              className="mb-2.5 text-lg font-bold text-primary-foreground
+                            leading-tight"
+                            >
+                              {item.title}
+                            </h3>
+                            <p className="text-sm leading-relaxed text-muted-foreground">
+                              {item.text}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  )}
+                </div>
+              </div>
+            </div>
+            {/* list2 end */}
 
             <div className="pt-12.5">
               <Title size={'4xl'}>
