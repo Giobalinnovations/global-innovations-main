@@ -90,7 +90,7 @@ const ServiceArtical = ({ data, slug }) => {
 
             {/* list2 - Digital Marketing Tips */}
             <div className="pt-15">
-              <Title size={'4xl'}>
+              <Title size={'5xl'}>
                 {data?.content?.servicesArticle?.list2?.title}
               </Title>
 
