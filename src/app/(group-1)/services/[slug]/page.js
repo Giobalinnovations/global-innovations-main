@@ -16,8 +16,9 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: service?.title || 'Service Details',
-    description: service?.description || 'Service details page',
+    title: service?.meta?.title || 'Service Details',
+    description: service?.meta?.description || 'Service details page',
+    keywords: service?.meta?.keywords || 'Service details page keywords',
     // openGraph: {
     //   title: service?.title || 'Service Details',
     //   description: service?.description || 'Service details page',
