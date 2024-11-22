@@ -6,11 +6,11 @@ import ServiceTwo from '@/components/sections/services/serviceTwo';
 import Solutions from '@/components/sections/solutions';
 
 export const metadata = {
-  title: 'Global Innovations| Services',
+  title: 'Online Marketing Company & Agency in India - Global Innovations',
   description:
-    'Global Innovations offers comprehensive digital marketing services including SEO, SEM, web development, PR, media buying, and influencer marketing to help businesses grow online.',
+    'We specialise in providing online marketing services in India that cater to your business needs. Contact us for the best consultation and advice today.s',
   keywords:
-    'digital marketing services, SEO services, web development, PR agency, media buying, influencer marketing, SEM services, digital marketing company india, marketing agency india',
+    'media marketing, Online marketing Services, Online marketing agency in India, Online Marketing Company in India',
   alternates: {
     canonical: '/services',
   },
