@@ -28,6 +28,17 @@ const Title = ({ children, size, className }) => {
       </h1>
     );
   }
+  if (size === 'h1-title') {
+    return (
+      <h1
+        className={cn(
+          `font-extrabold text-muted-foreground lg:text-5xl sm:text-4.5xl text-3xl lg:leading-[140%] sm:leading-[130%] leading-[120%] ${className}`
+        )}
+      >
+        {children}
+      </h1>
+    );
+  }
   if (size === '2xl') {
     return (
       <h5
