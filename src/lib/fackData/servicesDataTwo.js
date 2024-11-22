@@ -110,6 +110,13 @@ export const servicesDataContent = [
     id: 1,
     title: 'Digital Marketing Services',
     slug: 'digital-marketing-services',
+    meta: {
+      title:
+        'Global Innovation:  Best Digital Marketing Agency & Company in India| Digital Marketing Services',
+      description: `Partner with the best digital marketing agency & company in India. We offer best & expert digital marketing services for all your business needs. Let's connect today to increase your website traffic.`,
+      keywords:
+        'digital marketing services, media marketing, digital marketing company, best digital marketing, digital marketing solutions, best digital marketing services, digital marketing online, digital marketing seo, digital marketing business, best digital marketing company, digital marketing agency, services for digital marketing, digital marketing agency india, digital marketing agency in india​, digital marketing company in india​, digital marketing in India, digital marketing services in india​, best digital marketing agency in india​, best digital marketing company in india​, website traffic',
+    },
     content: {
       pageTitle: {
         pageName: 'Digital Marketing Services',
@@ -226,6 +233,13 @@ export const servicesDataContent = [
     id: 2,
     title: 'Social Media Marketing Services',
     slug: 'social-media-marketing',
+    meta: {
+      title:
+        'Social Media Marketing Services Company & Agency in India – Digital Cappuccino',
+      description: `Boost your brand with Digital Cappuccino, India's creative social media marketing agency. We offer social media optimization and advertising services to grow social media campaign and audience. VISIT US NOW`,
+      keywords:
+        'social media marketing, smo, smm, social media marketing services, social media optimization services, social media marketing company in india, social media marketing agency in india, social media marketing agency, social media agency, social media advertising, social media strategy, social media marketing strategy, social media marketing companies, social media ads, twitter advertising, social media marketing near me, social media campaign, smm marketing, social marketing agency, social media marketing companies near me',
+    },
     content: {
       pageTitle: {
         pageName: 'Social Media Marketing Services',
@@ -344,6 +358,13 @@ export const servicesDataContent = [
     id: 3,
     title: 'SEO Services',
     slug: 'seo-services',
+    meta: {
+      title: 'Best SEO Company & Agency in India | SEO Services Near Me',
+      description:
+        'Partner with the best SEO agency & company in India. We offer expert international & Local SEO services to boost your website ranking. Start organic lead generation now with us',
+      keywords:
+        'SEO, Organic Lead Generation, SEO Audit, competitor analysis, SEO services, seo company, link building, seo marketing, seo agency, seo optimization, backlinks, seo specialist, local seo, best seo companies, website audit, website ranking, seo keyword search, seo company near me, seo services near me, white label seo, seo services in india, seo company in india, seo agency in india, seo india, best seo company in india, seo marketing agency india',
+    },
     content: {
       pageTitle: {
         pageName: 'SEO Services',
@@ -459,6 +480,12 @@ export const servicesDataContent = [
     id: 4,
     title: 'Influencer Marketing Services',
     slug: 'influencer-marketing-services',
+    meta: {
+      title:
+        'Best Influencer Marketing Company & Agency in India – Digital Cappuccino',
+      description: `Global Innovations is the leading influencer marketing company & agency in India and the top influencer marketing platform connecting brands with influencers for better sales. Consult our influencer campaigns specialists today!`,
+      keywords: `influencer marketing, influencer marketing india, influencer marketing services, influencer marketing company, influencer marketing agency, influencer agency, influencer instagram influencer marketing, find an influencer, social media influencer marketing, microinfluencer, influencer marketing strategy, top influencer marketing agencies, best influencer marketing agencies, influencer marketing agency india influencer marketing campaign micro influencer marketing platform, influencer services social influencer influencer marketing platform india`,
+    },
     content: {
       pageTitle: {
         pageName: 'Influencer Marketing Services',
@@ -576,6 +603,12 @@ export const servicesDataContent = [
     id: 5,
     title: 'Web Development Services',
     slug: 'web-development-services',
+    meta: {
+      title:
+        'Website Design and Development Services Company in India – Global Innovation',
+      description: `Global Innovations is the leading website development company & agency in India that offers website design and development services  for ecommerce, web application & shopify websites in budget friendly cost. VISIT US NOW.`,
+      keywords: `website development, website developement india, web development, website development company in india, website development agency in india, web development services, website developers near me, website development company, website developers, web development company, web developers near me, website design cost, website design services, web application development, web design and development, web development agency, website development costs, web design companies near me, ecommerce website developer, cost to build a website`,
+    },
     content: {
       pageTitle: {
         pageName: 'Web Development Services',
@@ -693,6 +726,12 @@ export const servicesDataContent = [
     id: 6,
     title: 'PR Agency',
     slug: 'pr-agencys',
+    meta: {
+      title:
+        'Best PR Agency & Company in India | Public Relation Services in India',
+      description: `Global Innovations is known as one of the best PR marketing agency & company in India that offers public relation distribution services. Visit us to increase your brand reputation now.`,
+      keywords: `pr agency, pr services, public relation, pr company in india, brand reputation, pr, pr firms, pr company, best press release distribution services, pr distribution services, public relations companies, pr firms near me, pr agency near me, pr companies near me, public relations agencies, pr marketing, best pr agencies, public relations services, pr marketing agency, pr agencies in india, top pr agencies in india`,
+    },
     content: {
       pageTitle: {
         pageName: 'PR Agency',
@@ -807,6 +846,11 @@ export const servicesDataContent = [
     id: 7,
     title: 'Media Buying Services',
     slug: 'media-buying-company',
+    meta: {
+      title: 'Media Buying Services in India | Media Buying Agency in India',
+      description: `Looking for the best media buying company in India? Global Innovations offers the best media buying service in India Included Communication Planning, Content Creation, and Technology. CONTACT US NOW.`,
+      keywords: `media buying, media buying agency, facebook followers increase, purchase twitter followers, programmatic ad buying, purchase facebook followers, media planning and buying, purchase linkedin followers, cost of a facebook ad, ad buying, media placement agency,twitter follow buy, social media price packages, buy follow twitter, buy twitter subscribers,cost of advertising on twitter`,
+    },
     content: {
       pageTitle: {
         pageName: 'Media Buying Services',
@@ -923,6 +967,11 @@ export const servicesDataContent = [
     id: 8,
     title: 'Search Engine Marketing Services',
     slug: 'search-engine-marketing-services',
+    meta: {
+      title: 'Search Engine Marketing Services in India | SEM Agency in India',
+      description: `Looking for the best search engine marketing services in India?  Global Innovations is the leading SEM company and agency in India that helps you achieve optimum results and improve your ROI? CONTACT US NOW.`,
+      keywords: `sem, search engine marketing, search engine marketing services, sem services, google, pay per click, google sem, google pay per click advertising, sem marketing, search engine advertising, sem agencies, sem search engine marketing, search engine marketing companies, sem company, microsoft advertising bing`,
+    },
     content: {
       pageTitle: {
         pageName: 'Search Engine Marketing Services',
