@@ -1,5 +1,5 @@
 import React from 'react';
-// import BlogOne from '@/components/sections/blogs/blogOne';
+import BlogOne from '@/components/sections/blogs/blogOne';
 import FaqOne from '@/components/sections/faqs/faqOne';
 import HeroTwo from '@/components/sections/heroes/heroTwo';
 import StoryTwo from '@/components/sections/ourStories/storyTwo';
@@ -40,7 +40,7 @@ const HomeTwo = () => {
         <TestimonialOne />
         <Solutions />
         <FaqOne />
-        {/* <BlogOne /> */}
+        <BlogOne />
         <SubscribeTwo />
       </main>
       <FooterTwo />
