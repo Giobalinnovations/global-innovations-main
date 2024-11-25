@@ -45,7 +45,7 @@ export const servicesDataTwo = [
     id: 1,
     icon_1: <DigitalMarketing width={24} height={24} />,
     service_name: 'Digital Marketing Services',
-    slug: 'digital-marketing-services',
+    slug: 'digital-marketing-services-india',
     description:
       'We expand your online presence to meet the aims of your marketing efforts by means of effective, data-driven digital marketing strategies',
   },
@@ -53,7 +53,7 @@ export const servicesDataTwo = [
     id: 2,
     icon_1: <Send />,
     service_name: 'Social Media Marketing',
-    slug: 'social-media-marketing',
+    slug: 'social-media-marketing-india',
     description:
       'With SMM expertise, we are passionate about helping you create and interact with your online community using innovative and relevant content, campaigns, and ads.',
   },
@@ -61,7 +61,7 @@ export const servicesDataTwo = [
     id: 3,
     icon_1: <Activity height={36} width={35} />,
     service_name: 'SEO Services',
-    slug: 'seo-services',
+    slug: 'seo-services-india',
     description:
       'Global Innovations is looking to take your SERPs on Bing, Google, and DuckDuckGo to the next level through the use of ethical SEO methods in an effort to bring more organic traffic to your site.',
   },
@@ -69,7 +69,7 @@ export const servicesDataTwo = [
     id: 4,
     icon_1: <Influencer width={36} height={35} />,
     service_name: 'Influencer Marketing Services',
-    slug: 'influencer-marketing-services',
+    slug: 'influencer-marketing-services-india',
     description:
       'Gen-Z leaders at Global Innovations connect you with influential influencers to amplify your brand message for increased trust and loyalty.',
   },
@@ -77,7 +77,7 @@ export const servicesDataTwo = [
     id: 5,
     icon_1: <WebDevelopment width={36} height={35} />,
     service_name: 'Web Development Services',
-    slug: 'web-development-services',
+    slug: 'web-development-services-india',
     description:
       'Our UI/UX Designers design engaging and user-friendly websites that depict your brand and attract the target audience to your sites.',
   },
@@ -85,7 +85,7 @@ export const servicesDataTwo = [
     id: 6,
     icon_1: <PrAgency width={36} height={35} />,
     service_name: 'PR Agencys',
-    slug: 'pr-agencys',
+    slug: 'pr-agencys-india',
     description:
       'Our effective public relations services help grow your brand visibility, reputation, and engagement, creating a connection to the targeted audience.',
   },
@@ -93,14 +93,14 @@ export const servicesDataTwo = [
     id: 7,
     icon_1: <MediaBuying width={36} height={35} />,
     service_name: 'Media Buying Company',
-    slug: 'media-buying-company',
+    slug: 'media-buying-company-india',
     description: `Get more extensive reach and a higher ROI with our media buying by ensuring you're getting placed in the best ad opportunity and strategy for multiple online and offline channels.`,
   },
   {
     id: 8,
     icon_1: <SearchEngineMarketing width={36} height={35} />,
     service_name: 'Search Engine Marketing Services',
-    slug: 'search-engine-marketing-services',
+    slug: 'search-engine-marketing-services-india',
     description: `Unlock online presence and drive conversion traffic with our data-driven SEM services built to build visibility, convert better, and deliver results.`,
   },
 ];
@@ -109,7 +109,7 @@ export const servicesDataContent = [
   {
     id: 1,
     title: 'Digital Marketing Services',
-    slug: 'digital-marketing-services',
+    slug: 'digital-marketing-services-india',
     meta: {
       title:
         'Global Innovation:  Best Digital Marketing Agency & Company in India| Digital Marketing Services',
@@ -232,7 +232,7 @@ export const servicesDataContent = [
   {
     id: 2,
     title: 'Social Media Marketing Services',
-    slug: 'social-media-marketing',
+    slug: 'social-media-marketing-india',
     meta: {
       title:
         'Social Media Marketing Services Company & Agency in India – Digital Cappuccino',
@@ -357,7 +357,7 @@ export const servicesDataContent = [
   {
     id: 3,
     title: 'SEO Services',
-    slug: 'seo-services',
+    slug: 'seo-services-india',
     meta: {
       title: 'Best SEO Company & Agency in India | SEO Services Near Me',
       description:
@@ -479,7 +479,7 @@ export const servicesDataContent = [
   {
     id: 4,
     title: 'Influencer Marketing Services',
-    slug: 'influencer-marketing-services',
+    slug: 'influencer-marketing-services-india',
     meta: {
       title:
         'Best Influencer Marketing Company & Agency in India – Digital Cappuccino',
@@ -602,7 +602,7 @@ export const servicesDataContent = [
   {
     id: 5,
     title: 'Web Development Services',
-    slug: 'web-development-services',
+    slug: 'web-development-services-india',
     meta: {
       title:
         'Website Design and Development Services Company in India – Global Innovation',
@@ -725,7 +725,7 @@ export const servicesDataContent = [
   {
     id: 6,
     title: 'PR Agency',
-    slug: 'pr-agencys',
+    slug: 'pr-agencys-india',
     meta: {
       title:
         'Best PR Agency & Company in India | Public Relation Services in India',
@@ -845,7 +845,7 @@ export const servicesDataContent = [
   {
     id: 7,
     title: 'Media Buying Services',
-    slug: 'media-buying-company',
+    slug: 'media-buying-company-india',
     meta: {
       title: 'Media Buying Services in India | Media Buying Agency in India',
       description: `Looking for the best media buying company in India? Global Innovations offers the best media buying service in India Included Communication Planning, Content Creation, and Technology. CONTACT US NOW.`,
@@ -966,7 +966,7 @@ export const servicesDataContent = [
   {
     id: 8,
     title: 'Search Engine Marketing Services',
-    slug: 'search-engine-marketing-services',
+    slug: 'search-engine-marketing-services-india',
     meta: {
       title: 'Search Engine Marketing Services in India | SEM Agency in India',
       description: `Looking for the best search engine marketing services in India?  Global Innovations is the leading SEM company and agency in India that helps you achieve optimum results and improve your ROI? CONTACT US NOW.`,

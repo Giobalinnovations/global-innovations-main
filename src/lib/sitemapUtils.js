@@ -1,27 +1,27 @@
 const servicesData = [
   {
-    slug: 'digital-marketing-services',
+    slug: 'digital-marketing-services-india',
   },
   {
-    slug: 'social-media-marketing-services',
+    slug: 'social-media-marketing-services-india',
   },
   {
-    slug: 'seo-services',
+    slug: 'seo-services-india',
   },
   {
-    slug: 'influencer-marketing-services',
+    slug: 'influencer-marketing-services-india',
   },
   {
-    slug: 'web-development-services',
+    slug: 'web-development-services-india',
   },
   {
-    slug: 'pr-agencys',
+    slug: 'pr-agencys-india',
   },
   {
-    slug: 'media-buying-company',
+    slug: 'media-buying-company-india',
   },
   {
-    slug: 'search-engine-marketing-services',
+    slug: 'search-engine-marketing-services-india',
   },
 ];
 
