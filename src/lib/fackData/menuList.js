@@ -35,6 +35,13 @@ export const menuList = [
     megaMenu: false,
     dropDown: [],
   },
+  {
+    id: 5,
+    path: '/blog',
+    lable: 'Blog',
+    megaMenu: false,
+    dropDown: [],
+  },
   // {
   //   id: 4,
   //   path: '#',
