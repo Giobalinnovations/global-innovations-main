@@ -43,13 +43,13 @@ const BlogPage = () => {
 
   return (
     <main>
-      <HeaderTwo />
-      <div className="bg-gray-50 min-h-screen">
+      <HeaderTwo haveOvcanvsIcon={true} haveShadow={true} />
+      <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <div className="bg-primary text-white py-16">
+        <div className="py-16 text-white bg-primary">
           <div className="max-w-[1350px] mx-auto px-4">
-            <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Blog</h1>
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="mb-6 text-4xl font-bold md:text-5xl">Our Blog</h1>
               <p className="text-lg opacity-90">
                 Discover insights, tutorials, and updates from our team
               </p>
@@ -59,7 +59,7 @@ const BlogPage = () => {
 
         {/* Main Content */}
         <div className="max-w-[1350px] mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
             {/* Blog Posts Grid */}
             <div className="lg:col-span-8">
               {/* Search Component */}
@@ -113,7 +113,7 @@ const BlogPage = () => {
 
             {/* Sidebar with sticky behavior */}
             <div className="lg:col-span-4">
-              <div className="lg:sticky lg:top-6 space-y-6">
+              <div className="space-y-6 lg:sticky lg:top-6">
                 <RecentPosts posts={recentPosts} />
                 <BlogContactForm />
               </div>

@@ -6,7 +6,7 @@ import { formatDate } from '@/lib/utils';
 import Link from 'next/link';
 import BlogCardSkeleton from '@/components/ui/BlogCardSkeleton';
 import NoDataFound from '@/components/ui/NoDataFound';
-import { Clock, Eye, BookOpen } from 'lucide-react';
+import { Clock, BookOpen } from 'lucide-react';
 import HeaderTwo from '@/components/sections/headers/headerTwo';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import RecentPosts from '@/components/blog/RecentPosts';
@@ -60,7 +60,7 @@ const BlogDetailPage = ({ params }) => {
 
   return (
     <main>
-      <HeaderTwo />
+      <HeaderTwo haveOvcanvsIcon={true} haveShadow={true} />
       <article className="min-h-screen bg-gray-50">
         {/* Breadcrumb */}
         <div className="bg-white">
@@ -71,12 +71,11 @@ const BlogDetailPage = ({ params }) => {
           </div>
         </div>
 
-        {/* Content Section */}
         <div className="max-w-[1350px] mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
             {/* Main Content */}
             <div className="lg:col-span-8">
-              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+              <div className="overflow-hidden bg-white shadow-sm rounded-xl">
                 {/* Featured Image */}
                 <div className="relative aspect-[16/9]">
                   <Image
@@ -88,43 +87,38 @@ const BlogDetailPage = ({ params }) => {
                   />
                   {blog.imageCoverCaption && (
                     <div className="absolute bottom-0 left-0 right-0 p-4 text-white bg-black/50">
-                      <p className="text-sm">{blog.imageCoverCaption}</p>
+                      <p className="text-sm capitalize">
+                        {blog.imageCoverCaption}
+                      </p>
                     </div>
                   )}
                 </div>
 
-                <div className="p-8">
-                  {/* Blog Header */}
-                  <div className="mb-8">
-                    {/* Category */}
-                    {blog.category && (
-                      <Link
-                        href={`/blog/category/${blog.category._id}`}
-                        className="inline-block px-3 py-1 mb-4 transition-colors rounded-full bg-primary/10 text-primary hover:bg-primary/20"
-                      >
-                        {blog.category.name}
-                      </Link>
-                    )}
+                <div className="p-6 md:p-8 lg:p-10">
+                  {/* Category */}
+                  {blog.category && (
+                    <Link
+                      href={`/blog/category/${blog.category._id}`}
+                      className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium hover:bg-primary/20 transition-colors mb-4"
+                    >
+                      {blog.category.name}
+                    </Link>
+                  )}
 
-                    {/* Title */}
-                    <h1 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-                      {blog.title}
-                    </h1>
+                  {/* Title */}
+                  <h1 className="mb-4 text-3xl font-bold leading-tight text-gray-900 capitalize md:text-4xl lg:text-5xl">
+                    {blog.title}
+                  </h1>
 
-                    {/* Meta Info */}
-                    <div className="flex items-center gap-4 pb-8 text-sm text-gray-600 border-b border-gray-100">
-                      <span className="flex items-center">
-                        <Clock className="w-4 h-4 mr-2" />
-                        {formatDate(blog.createdAt)}
-                      </span>
-                      <span className="flex items-center">
-                        <BookOpen className="w-4 h-4 mr-2" />5 min read
-                      </span>
-                      <span className="flex items-center">
-                        <Eye className="w-4 h-4 mr-2" />
-                        {blog.count} views
-                      </span>
-                    </div>
+                  {/* Meta Info */}
+                  <div className="flex items-center gap-4 pb-8 mb-8 text-sm text-gray-600 border-b">
+                    <span className="flex items-center">
+                      <Clock className="w-4 h-4 mr-2" />
+                      {formatDate(blog.createdAt)}
+                    </span>
+                    <span className="flex items-center">
+                      <BookOpen className="w-4 h-4 mr-2" />5 min read
+                    </span>
                   </div>
 
                   {/* Article Content */}
@@ -156,12 +150,12 @@ const BlogDetailPage = ({ params }) => {
                   {/* Keywords */}
                   {blog.keywords && (
                     <div className="pt-8 mt-8 border-t">
-                      <h3 className="mb-4 text-lg font-semibold">Keywords</h3>
+                      <h3 className="mb-4 text-lg font-semibold">Topics</h3>
                       <div className="flex flex-wrap gap-2">
                         {blog.keywords.split(',').map((keyword, index) => (
                           <span
                             key={index}
-                            className="px-3 py-1 text-sm bg-gray-100 rounded-full"
+                            className="bg-gray-100 px-4 py-1.5 rounded-full text-sm text-gray-700"
                           >
                             {keyword.trim()}
                           </span>
@@ -173,9 +167,9 @@ const BlogDetailPage = ({ params }) => {
               </div>
             </div>
 
-            {/* Sidebar with sticky behavior */}
+            {/* Sidebar */}
             <div className="lg:col-span-4">
-              <div className="lg:sticky lg:top-6 space-y-6">
+              <div className="space-y-6 lg:sticky lg:top-6">
                 <RecentPosts posts={recentPosts} currentPostId={blog?._id} />
                 <BlogContactForm />
               </div>
