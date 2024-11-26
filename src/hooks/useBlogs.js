@@ -8,23 +8,26 @@ export const blogKeys = {
   lists: () => [...blogKeys.all, 'list'],
   list: filters => [...blogKeys.lists(), { filters }],
   details: () => [...blogKeys.all, 'detail'],
-  detail: id => [...blogKeys.details(), id],
+  detail: slug => [...blogKeys.details(), slug],
 };
 
-export const useBlogs = ({ limit = 3 } = {}) => {
+export const useBlogs = ({ limit = 9, page = 1, search = '', category }) => {
   return useQuery({
-    queryKey: blogKeys.list(`limit=${limit}`),
-    queryFn: () => blogService.getBlogs({ limit }),
-    staleTime: 1000 * 60 * 5, // Consider data fresh for 5 minutes
-    gcTime: 1000 * 60 * 60 * 24, // Keep unused data in cache for 24 hours
+    queryKey: blogKeys.list(
+      `limit=${limit}&page=${page}&search=${search}&category=${category}`
+    ),
+    queryFn: () => blogService.getBlogs({ limit, page, search, category }),
+    staleTime: 1000 * 60 * 5,
+    gcTime: 1000 * 60 * 60 * 24,
+    keepPreviousData: true,
   });
 };
 
-export const useBlog = id => {
+export const useBlog = slug => {
   return useQuery({
-    queryKey: blogKeys.detail(id),
-    queryFn: () => blogService.getBlogById(id),
-    enabled: !!id, // Only run query if we have an ID
+    queryKey: blogKeys.detail(slug),
+    queryFn: () => blogService.getBlogById(slug),
+    enabled: !!slug,
     staleTime: 1000 * 60 * 5,
     gcTime: 1000 * 60 * 60 * 24,
   });

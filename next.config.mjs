@@ -14,11 +14,19 @@ const nextConfig = {
   images: {
     unoptimized: true,
     remotePatterns: [
+      // {
+      //   protocol: 'https',
+      //   hostname: '**',
+      // },
+      // {
+      //   protocol: 'http',
+      // }
       {
         protocol: 'https',
-        hostname: '**',
+        hostname: 'storagegi.s3.amazonaws.com',
       },
     ],
+    domains: ['localhost', 'your-api-domain.com'],
   },
 };
 

@@ -10,7 +10,7 @@ import BlogCardSkeleton from '@/components/ui/BlogCardSkeleton';
 import NoDataFound from '@/components/ui/NoDataFound';
 
 const BlogOne = () => {
-  const { data: blogs, isLoading, isError, error } = useBlogs({ limit: 3 });
+  const { data: blogData, isLoading, isError, error } = useBlogs({ limit: 3 });
 
   const renderContent = () => {
     if (isLoading) {
@@ -33,22 +33,16 @@ const BlogOne = () => {
       );
     }
 
+    const blogs = blogData?.data || [];
+
     if (!blogs?.length) {
       return <NoDataFound />;
     }
 
     return (
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 pt-7.5 gap-7.5 justify-between">
-        {blogs.map(({ id, author, date, thumb, title, category }) => (
-          <CardOne
-            key={id}
-            id={id}
-            title={title}
-            thumb={thumb}
-            author={author}
-            date={date}
-            category={category}
-          />
+        {blogs.map(blog => (
+          <CardOne key={blog._id} blog={blog} />
         ))}
       </div>
     );
