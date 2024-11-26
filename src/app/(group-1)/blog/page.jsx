@@ -1,13 +1,15 @@
 'use client';
 
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { useBlogs } from '@/hooks/useBlogs';
 import { useState, useCallback } from 'react';
 import BlogCard from '@/components/sections/blogs/BlogCard';
 import BlogCardSkeleton from '@/components/ui/BlogCardSkeleton';
 import NoDataFound from '@/components/ui/NoDataFound';
-import PageTitle from '@/components/sections/pageTitle';
+import HeaderTwo from '@/components/sections/headers/headerTwo';
+import RecentPosts from '@/components/blog/RecentPosts';
+import BlogContactForm from '@/components/blog/BlogContactForm';
+import BlogSearch from '@/components/blog/BlogSearch';
+import { Button } from '@/components/ui/button';
 
 const BlogPage = () => {
   const [page, setPage] = useState(1);
@@ -15,24 +17,23 @@ const BlogPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const { data: blogData, isLoading } = useBlogs({
-    limit: 9,
+    limit: 6,
     page,
     search,
     category: selectedCategory !== 'all' ? selectedCategory : undefined,
   });
 
+  const { data: recentBlogsData } = useBlogs({ limit: 4 });
+
   const blogs = blogData?.data || [];
   const categories = blogData?.categories || [];
   const totalPages = blogData?.totalPages || 1;
   const hasNextPage = page < totalPages;
+  const recentPosts = recentBlogsData?.data || [];
 
   const handleSearch = useCallback(value => {
-    const timeoutId = setTimeout(() => {
-      setSearch(value);
-      setPage(1);
-    }, 500);
-
-    return () => clearTimeout(timeoutId);
+    setSearch(value);
+    setPage(1);
   }, []);
 
   const handleCategoryChange = categoryId => {
@@ -42,81 +43,83 @@ const BlogPage = () => {
 
   return (
     <main>
-      <PageTitle pageName={'Blog'} breadcrumbLink={'Blog'} />
-      <div className="max-w-[1350px] mx-auto px-[15px]">
-        <div className="mb-12 text-center">
-          <h1 className="mb-4 text-4xl font-bold">Our Blog</h1>
-          <p className="max-w-2xl mx-auto text-gray-600">
-            Discover insights and updates from our team
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-4 mb-8 md:flex-row">
-          <div className="flex-1">
-            <Input
-              placeholder="Search articles..."
-              onChange={e => handleSearch(e.target.value)}
-              className="w-full"
-            />
-          </div>
-          <div className="flex gap-2 pb-2 overflow-x-auto">
-            <Button
-              variant={selectedCategory === 'all' ? 'default' : 'outline'}
-              onClick={() => handleCategoryChange('all')}
-            >
-              All
-            </Button>
-            {categories.map(category => (
-              <Button
-                key={category._id}
-                variant={
-                  selectedCategory === category._id ? 'default' : 'outline'
-                }
-                onClick={() => handleCategoryChange(category._id)}
-              >
-                {category.name}
-              </Button>
-            ))}
+      <HeaderTwo />
+      <div className="bg-gray-50 min-h-screen">
+        {/* Hero Section */}
+        <div className="bg-primary text-white py-16">
+          <div className="max-w-[1350px] mx-auto px-4">
+            <div className="text-center max-w-3xl mx-auto">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Blog</h1>
+              <p className="text-lg opacity-90">
+                Discover insights, tutorials, and updates from our team
+              </p>
+            </div>
           </div>
         </div>
 
-        {isLoading ? (
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[...Array(9)].map((_, index) => (
-              <BlogCardSkeleton key={index} />
-            ))}
-          </div>
-        ) : blogs.length > 0 ? (
-          <>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {blogs.map(blog => (
-                <BlogCard key={blog._id} blog={blog} />
-              ))}
+        {/* Main Content */}
+        <div className="max-w-[1350px] mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            {/* Blog Posts Grid */}
+            <div className="lg:col-span-8">
+              {/* Search Component */}
+              <BlogSearch
+                onSearch={handleSearch}
+                categories={categories}
+                selectedCategory={selectedCategory}
+                onCategoryChange={handleCategoryChange}
+              />
+
+              {/* Blog Posts */}
+              {isLoading ? (
+                <div className="grid gap-8">
+                  {[...Array(6)].map((_, index) => (
+                    <BlogCardSkeleton key={index} />
+                  ))}
+                </div>
+              ) : blogs.length > 0 ? (
+                <>
+                  <div className="grid gap-8">
+                    {blogs.map(blog => (
+                      <BlogCard key={blog._id} blog={blog} />
+                    ))}
+                  </div>
+
+                  {/* Pagination */}
+                  <div className="flex items-center justify-center gap-4 mt-12">
+                    <Button
+                      variant="outline"
+                      disabled={page === 1 || isLoading}
+                      onClick={() => setPage(prev => Math.max(prev - 1, 1))}
+                    >
+                      Previous
+                    </Button>
+                    <span className="text-sm">
+                      Page {page} of {totalPages}
+                    </span>
+                    <Button
+                      variant="outline"
+                      disabled={!hasNextPage || isLoading}
+                      onClick={() => setPage(prev => prev + 1)}
+                    >
+                      Next
+                    </Button>
+                  </div>
+                </>
+              ) : (
+                <NoDataFound message="No blog posts found matching your criteria" />
+              )}
             </div>
 
-            <div className="flex items-center justify-center gap-4 mt-12">
-              <Button
-                variant="outline"
-                disabled={page === 1 || isLoading}
-                onClick={() => setPage(prev => Math.max(prev - 1, 1))}
-              >
-                Previous
-              </Button>
-              <span className="text-sm">
-                Page {page} of {totalPages}
-              </span>
-              <Button
-                variant="outline"
-                disabled={!hasNextPage || isLoading}
-                onClick={() => setPage(prev => prev + 1)}
-              >
-                Next
-              </Button>
+            {/* Sidebar with sticky behavior */}
+            <div className="lg:col-span-4">
+              <div className="lg:sticky lg:top-6 space-y-6">
+                <RecentPosts posts={recentPosts} />
+                <BlogContactForm />
+              </div>
             </div>
-          </>
-        ) : (
-          <NoDataFound message="No blog posts found matching your criteria" />
-        )}
+          </div>
+        </div>
       </div>
     </main>
   );

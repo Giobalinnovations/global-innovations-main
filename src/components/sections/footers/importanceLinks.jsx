@@ -27,7 +27,7 @@ const ImportanceLinks = ({ color }) => {
       links: [
         {
           id: 1,
-          path: '#',
+          path: '/blog',
           label: 'Blog',
         },
         {

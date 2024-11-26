@@ -61,13 +61,13 @@ const BlogContactForm = () => {
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-sm p-6">
-      <h2 className="text-xl font-bold mb-6">Get in Touch</h2>
+    <div className="p-6 bg-white shadow-sm rounded-xl">
+      <h2 className="mb-6 text-xl font-bold">Get in Touch</h2>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           {form.formState.errors.root && (
-            <div className="flex items-center gap-2 p-3 rounded-lg bg-red-50 text-red-600 text-sm">
-              <AlertCircle className="h-4 w-4" />
+            <div className="flex items-center gap-2 p-3 text-sm text-red-600 rounded-lg bg-red-50">
+              <AlertCircle className="w-4 h-4" />
               <p>{form.formState.errors.root.message}</p>
             </div>
           )}
@@ -223,7 +223,7 @@ const BlogContactForm = () => {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-primary text-white hover:bg-primary/90"
+            className="w-full text-white bg-primary hover:bg-primary/90"
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
           </Button>

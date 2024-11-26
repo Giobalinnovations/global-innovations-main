@@ -73,10 +73,10 @@ const BlogDetailPage = ({ params }) => {
 
         {/* Content Section */}
         <div className="max-w-[1350px] mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Main Content */}
             <div className="lg:col-span-8">
-              <div className="overflow-hidden bg-white shadow-sm rounded-xl">
+              <div className="bg-white rounded-xl shadow-sm overflow-hidden">
                 {/* Featured Image */}
                 <div className="relative aspect-[16/9]">
                   <Image
@@ -173,13 +173,12 @@ const BlogDetailPage = ({ params }) => {
               </div>
             </div>
 
-            {/* Sidebar */}
-            <div className="space-y-6 lg:col-span-4">
-              {/* Recent Posts */}
-              <RecentPosts posts={recentPosts} currentPostId={blog?._id} />
-
-              {/* Blog Contact Form */}
-              <BlogContactForm />
+            {/* Sidebar with sticky behavior */}
+            <div className="lg:col-span-4">
+              <div className="lg:sticky lg:top-6 space-y-6">
+                <RecentPosts posts={recentPosts} currentPostId={blog?._id} />
+                <BlogContactForm />
+              </div>
             </div>
           </div>
         </div>
