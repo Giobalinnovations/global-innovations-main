@@ -32,3 +32,11 @@ export const useBlog = slug => {
     gcTime: 1000 * 60 * 60 * 24,
   });
 };
+
+export const useRecentPosts = (limit = 5) => {
+  return useQuery({
+    queryKey: blogKeys.list(`recent-limit=${limit}`),
+    queryFn: () => blogService.getBlogs({ limit }),
+    staleTime: 1000 * 60 * 5,
+  });
+};

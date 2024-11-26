@@ -141,7 +141,40 @@ module.exports = {
         'up-down': 'up-down 1.1s infinite alternate',
         'left-right': 'left-right 1.1s infinite alternate',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '100ch',
+            color: 'rgb(var(--foreground-rgb))',
+            a: {
+              color: 'var(--primary)',
+              '&:hover': {
+                color: 'var(--primary-dark)',
+              },
+            },
+            strong: {
+              color: 'rgb(var(--foreground-rgb))',
+            },
+            h1: {
+              color: 'rgb(var(--foreground-rgb))',
+            },
+            h2: {
+              color: 'rgb(var(--foreground-rgb))',
+            },
+            h3: {
+              color: 'rgb(var(--foreground-rgb))',
+            },
+            code: {
+              color: 'rgb(var(--foreground-rgb))',
+            },
+            blockquote: {
+              borderLeftColor: 'var(--primary)',
+              color: 'rgb(var(--foreground-rgb))',
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
 };
