@@ -7,7 +7,7 @@ const axiosInstance = axios.create({
     process.env.API_URL ||
     'https://pgyuqtbyfn.us-east-1.awsapprunner.com/api/v1',
 });
-
+//
 // Blog service functions
 const blogService = {
   getBlogs: async ({ limit = 9, page = 1, search = '', category }) => {
