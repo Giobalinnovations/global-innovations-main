@@ -34,7 +34,7 @@ const HeaderFour = () => {
                 <Logo />
               </div>
               <div className="flex items-center gap-16">
-                <nav className="hidden xl:block">
+                <nav className="hidden lg:block">
                   <ul className="flex items-center 2xl:gap-12.5 gap-7">
                     {menuList.map(({ id, lable, path, dropDown, megaMenu }) => {
                       return (
@@ -61,7 +61,7 @@ const HeaderFour = () => {
                     })}
                   </ul>
                 </nav>
-                <div className="items-center hidden gap-5 xl:flex ">
+                <div className="items-center hidden gap-5 lg:flex ">
                   <Button asChild size="xl" className="dark:text-white">
                     <Link href={'/contact-us'}> Let’s Talk </Link>
                   </Button>
