@@ -1,4 +1,38 @@
 const servicesData = require('./src/lib/sitemapUtils');
+const axios = require('axios');
+
+// Create axios instance
+const axiosInstance = axios.create({
+  baseURL:
+    process.env.API_URL ||
+    'https://pgyuqtbyfn.us-east-1.awsapprunner.com/api/v1',
+});
+
+// Blog service functions
+const blogService = {
+  getBlogs: async ({ limit = 9, page = 1, search = '', category }) => {
+    const params = new URLSearchParams({
+      limit: String(limit),
+      page: String(page),
+    });
+
+    if (search) params.append('search', search);
+    if (category && category !== 'all') params.append('category', category);
+
+    try {
+      const { data: response } = await axiosInstance.get(`/blogs?${params}`);
+      return {
+        data: response.data || [],
+        categories: response.categories || [],
+        totalPages: response.totalPages || 1,
+        hasNextPage: page < (response.totalPages || 1),
+      };
+    } catch (error) {
+      console.error('Error fetching blogs:', error);
+      throw new Error(error.message || 'Failed to fetch blogs');
+    }
+  },
+};
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
@@ -25,6 +59,16 @@ module.exports = {
       };
     }
 
+    // Custom priority and changefreq for blog pages
+    if (path.includes('/blog/')) {
+      return {
+        loc: path,
+        changefreq: 'daily',
+        priority: 0.9,
+        lastmod: new Date().toISOString(),
+      };
+    }
+
     // Default values for other pages
     return {
       loc: path,
@@ -34,6 +78,7 @@ module.exports = {
     };
   },
   additionalPaths: async config => {
+    // Get all service routes
     const serviceRoutes = servicesData.map(service => ({
       loc: `/services/${service.slug}`,
       changefreq: 'weekly',
@@ -41,6 +86,27 @@ module.exports = {
       lastmod: new Date().toISOString(),
     }));
 
-    return serviceRoutes;
+    // Fetch all blogs
+    let blogRoutes = [];
+    try {
+      // Fetch all blogs (using a large limit to get all blogs)
+      const { data: blogs } = await blogService.getBlogs({
+        limit: 1000,
+        page: 1,
+      });
+
+      // Create blog routes
+      blogRoutes = blogs.map(blog => ({
+        loc: `/blog/${blog.slug}`,
+        changefreq: 'daily',
+        priority: 0.9,
+        lastmod: blog.updatedAt || new Date().toISOString(),
+      }));
+    } catch (error) {
+      console.error('Error fetching blogs for sitemap:', error);
+    }
+
+    // Combine both service and blog routes
+    return [...serviceRoutes, ...blogRoutes];
   },
 };
