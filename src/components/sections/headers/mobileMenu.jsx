@@ -21,7 +21,7 @@ const MobileMenu = ({ data }) => {
   }, [pathName]);
 
   return (
-    <div className="block xl:hidden ">
+    <div className="block lg:hidden ">
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
           <MdMenu className="-mb-2 text-5xl text-primary-foreground" />

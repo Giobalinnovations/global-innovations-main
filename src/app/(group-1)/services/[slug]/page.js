@@ -3,6 +3,7 @@ import PageTitle from '@/components/sections/pageTitle';
 import ServiceArtical from '@/components/sections/services/serviceArtical';
 import { servicesDataContent } from '@/lib/fackData/servicesDataTwo';
 import { notFound } from 'next/navigation';
+import Script from 'next/script';
 
 export async function generateMetadata({ params }) {
   const { slug } = params;
@@ -38,21 +39,43 @@ const ServicesDetails = ({ params }) => {
   }
 
   return (
-    <main>
-      <PageTitle
-        pageName={data?.content?.pageTitle?.pageName ?? ''}
-        breadcrumbLink={'services'}
-        breadcrumbCurrent={data?.content?.pageTitle?.breadcrumbCurrent ?? ''}
+    <>
+      <main>
+        <PageTitle
+          pageName={data?.content?.pageTitle?.pageName ?? ''}
+          breadcrumbLink={'services'}
+          breadcrumbCurrent={data?.content?.pageTitle?.breadcrumbCurrent ?? ''}
+        />
+        <ServiceArtical data={data} slug={slug} />
+        <ContactForm
+          color={'text-white'}
+          inputColor={
+            'bg-transparent border-white border text-white placeholder:text-white'
+          }
+        />
+        <div className="lg:pb-15 pb-9"></div>
+      </main>
+      <Script
+        id="structured-data-services-details-page"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: data?.content?.servicesArticle?.faq?.map(item => ({
+                '@type': 'Question',
+                name: item?.question,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: item?.ans,
+                },
+              })),
+            },
+          ]),
+        }}
       />
-      <ServiceArtical data={data} slug={slug} />
-      <ContactForm
-        color={'text-white'}
-        inputColor={
-          'bg-transparent border-white border text-white placeholder:text-white'
-        }
-      />
-      <div className="lg:pb-15 pb-9"></div>
-    </main>
+    </>
   );
 };
 
