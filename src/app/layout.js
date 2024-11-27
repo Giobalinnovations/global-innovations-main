@@ -2,6 +2,7 @@ import { DM_Sans, Inter, Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import dynamic from 'next/dynamic';
 import Script from 'next/script';
+import Providers from './providers';
 import { ThemeProvider } from '@/contextApi/themeProvider';
 import CountryProvider from '@/contextApi/countryProvider';
 import ScrollCircle from '@/components/ui/scrollCircle';
@@ -42,19 +43,21 @@ export default function RootLayout({ children }) {
         className={`${inter.variable} ${plus_jakarta_sans.variable} ${dm_sans.variable}`}
         suppressHydrationWarning={true}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <CountryProvider>
-            {children}
-            <Setting />
-            <ScrollCircle />
-            <CustomCursor />
-          </CountryProvider>
-        </ThemeProvider>
+        <Providers>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <CountryProvider>
+              {children}
+              <Setting />
+              <ScrollCircle />
+              <CustomCursor />
+            </CountryProvider>
+          </ThemeProvider>
+        </Providers>
         <Script
           id="structured-data"
           type="application/ld+json"

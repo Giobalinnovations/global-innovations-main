@@ -13,8 +13,11 @@ import MobileMenu from './mobileMenu';
 
 import StickyHeader from '@/components/ui/stickyHeader';
 import TopHeader from './topHeader';
+import { usePathname } from 'next/navigation';
 
 const HeaderFour = () => {
+  const pathname = usePathname();
+  if (pathname.startsWith('/blog')) return null;
   return (
     <StickyHeader>
       <header
