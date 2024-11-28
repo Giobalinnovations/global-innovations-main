@@ -235,8 +235,8 @@ export const servicesDataContent = [
     slug: 'social-media-marketing-india',
     meta: {
       title:
-        'Social Media Marketing Services Company & Agency in India – Digital Cappuccino',
-      description: `Boost your brand with Digital Cappuccino, India's creative social media marketing agency. We offer social media optimization and advertising services to grow social media campaign and audience. VISIT US NOW`,
+        'Social Media Marketing Services Company & Agency in India – Global Innovations',
+      description: `Boost your brand with Global Innovations, India's creative social media marketing agency. We offer social media optimization and advertising services to grow social media campaign and audience. VISIT US NOW`,
       keywords:
         'social media marketing, smo, smm, social media marketing services, social media optimization services, social media marketing company in india, social media marketing agency in india, social media marketing agency, social media agency, social media advertising, social media strategy, social media marketing strategy, social media marketing companies, social media ads, twitter advertising, social media marketing near me, social media campaign, smm marketing, social marketing agency, social media marketing companies near me',
     },
@@ -482,7 +482,7 @@ export const servicesDataContent = [
     slug: 'influencer-marketing-services-india',
     meta: {
       title:
-        'Best Influencer Marketing Company & Agency in India – Digital Cappuccino',
+        'Best Influencer Marketing Company & Agency in India – Global Innovations',
       description: `Global Innovations is the leading influencer marketing company & agency in India and the top influencer marketing platform connecting brands with influencers for better sales. Consult our influencer campaigns specialists today!`,
       keywords: `influencer marketing, influencer marketing india, influencer marketing services, influencer marketing company, influencer marketing agency, influencer agency, influencer instagram influencer marketing, find an influencer, social media influencer marketing, microinfluencer, influencer marketing strategy, top influencer marketing agencies, best influencer marketing agencies, influencer marketing agency india influencer marketing campaign micro influencer marketing platform, influencer services social influencer influencer marketing platform india`,
     },
