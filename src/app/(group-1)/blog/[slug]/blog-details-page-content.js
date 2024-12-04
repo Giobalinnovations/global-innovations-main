@@ -55,8 +55,29 @@ const BlogDetailPageContent = ({ slug }) => {
   }
 
   const categories = blog?.categories || [];
-  console.log(categories);
-  console.log(blog);
+  const faqs = blog?.faqs || [];
+
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity:
+      faqs?.length > 0
+        ? faqs?.map(item => ({
+            '@type': 'Question',
+            name: item?.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: item?.answer,
+            },
+          }))
+        : [
+            {
+              '@type': 'Question',
+              name: '',
+              acceptedAnswer: { '@type': 'Answer', text: '' },
+            },
+          ],
+  };
 
   return (
     <>
@@ -208,6 +229,7 @@ const BlogDetailPageContent = ({ slug }) => {
               },
               datePublished: formatDate(blog.createdAt),
             },
+            structuredData,
           ]),
         }}
       />
