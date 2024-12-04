@@ -119,9 +119,9 @@ export const servicesDataContent = [
     },
     content: {
       pageTitle: {
-        pageName: 'Digital Marketing Services',
+        pageName: 'Digital Marketing Services in India',
         breadcrumbLink: 'services',
-        breadcrumbCurrent: 'Digital Marketing Services',
+        breadcrumbCurrent: 'Digital Marketing Services in India',
       },
       servicesArticle: {
         title: 'What is Digital Marketing?',
@@ -242,9 +242,9 @@ export const servicesDataContent = [
     },
     content: {
       pageTitle: {
-        pageName: 'Social Media Marketing Services',
+        pageName: 'Social Media Marketing Services in India',
         breadcrumbLink: 'services',
-        breadcrumbCurrent: 'Social Media Marketing Services',
+        breadcrumbCurrent: 'Social Media Marketing Services in India',
       },
       servicesArticle: {
         title: 'What is Social Media Marketing?',
@@ -367,9 +367,9 @@ export const servicesDataContent = [
     },
     content: {
       pageTitle: {
-        pageName: 'SEO Services',
+        pageName: 'SEO Services in India',
         breadcrumbLink: 'services',
-        breadcrumbCurrent: 'SEO Services',
+        breadcrumbCurrent: 'SEO Services in India',
       },
       servicesArticle: {
         title: 'What is SEO?',
@@ -488,9 +488,9 @@ export const servicesDataContent = [
     },
     content: {
       pageTitle: {
-        pageName: 'Influencer Marketing Services',
+        pageName: 'Influencer Marketing Services in India',
         breadcrumbLink: 'services',
-        breadcrumbCurrent: 'Influencer Marketing Services',
+        breadcrumbCurrent: 'Influencer Marketing Services in India',
       },
       servicesArticle: {
         title: 'What is Influencer marketing?',
@@ -611,9 +611,9 @@ export const servicesDataContent = [
     },
     content: {
       pageTitle: {
-        pageName: 'Web Development Services',
+        pageName: 'Web Development Services in India',
         breadcrumbLink: 'services',
-        breadcrumbCurrent: 'Web Development Services',
+        breadcrumbCurrent: 'Web Development Services in India',
       },
       servicesArticle: {
         title: 'What is web development?',
@@ -734,9 +734,9 @@ export const servicesDataContent = [
     },
     content: {
       pageTitle: {
-        pageName: 'PR Agency',
+        pageName: 'PR Agency in India',
         breadcrumbLink: 'services',
-        breadcrumbCurrent: 'PR Agency',
+        breadcrumbCurrent: 'PR Agency in India',
       },
       servicesArticle: {
         title: 'What is public relation?',
@@ -853,9 +853,9 @@ export const servicesDataContent = [
     },
     content: {
       pageTitle: {
-        pageName: 'Media Buying Services',
+        pageName: 'Media Buying Services in India',
         breadcrumbLink: 'services',
-        breadcrumbCurrent: 'Media Buying Services',
+        breadcrumbCurrent: 'Media Buying Services in India',
       },
       servicesArticle: {
         title: 'What is Media buying?',
@@ -974,9 +974,9 @@ export const servicesDataContent = [
     },
     content: {
       pageTitle: {
-        pageName: 'Search Engine Marketing Services',
+        pageName: 'Search Engine Marketing Services in India',
         breadcrumbLink: 'services',
-        breadcrumbCurrent: 'Search Engine Marketing Services',
+        breadcrumbCurrent: 'Search Engine Marketing Services in India',
       },
       servicesArticle: {
         title: 'What is Search Engine Marketing?',
