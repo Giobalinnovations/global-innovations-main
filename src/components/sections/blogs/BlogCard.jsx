@@ -11,13 +11,13 @@ const BlogCard = ({ blog }) => {
         <div className="relative md:col-span-2">
           <Link
             href={`/blog/${blog.slug}`}
-            className="block relative aspect-[4/3] md:aspect-auto md:h-full"
+            className="relative block aspect-[4/3] md:aspect-auto md:h-full"
           >
             <Image
               src={blog.imageCover}
               alt={blog.imageCoverAlt}
               fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
+              className="object-cover w-full h-full"
             />
           </Link>
         </div>

@@ -104,7 +104,7 @@ const BlogDetailPageContent = ({ slug }) => {
                       src={blog.imageCover}
                       alt={blog.imageCoverAlt}
                       fill
-                      className="object-cover"
+                      className="object-cover "
                       priority
                     />
                     {blog.imageCoverCaption && (
