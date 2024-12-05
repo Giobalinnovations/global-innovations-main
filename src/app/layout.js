@@ -1,6 +1,7 @@
 import { DM_Sans, Inter, Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import dynamic from 'next/dynamic';
+import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script';
 import Providers from './providers';
 import { ThemeProvider } from '@/contextApi/themeProvider';
@@ -77,6 +78,7 @@ export default function RootLayout({ children }) {
             ]),
           }}
         />
+        <Analytics />
       </body>
     </html>
   );
