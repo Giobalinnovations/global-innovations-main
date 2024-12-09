@@ -168,36 +168,37 @@ const ServiceArtical = ({ data, slug }) => {
               </div>
             </div>
             {/* list2 end */}
+            {data?.content?.servicesArticle?.faq && (
+              <div className="pt-12.5">
+                <Title size={'4xl'}>
+                  Your Questions, Our Proficiency. Everything You need to Know.
+                </Title>
 
-            <div className="pt-12.5">
-              <Title size={'4xl'}>
-                Your Questions, Our Proficiency. Everything You need to Know.
-              </Title>
-
-              <div className="pt-15">
-                <Accordion type="single" defaultValue="one" collapsible>
-                  {data?.content?.servicesArticle?.faq?.map(
-                    ({ ans, id, question }) => {
-                      return (
-                        <SlideUp key={id} id={id}>
-                          <AccordionItem
-                            value={id}
-                            className="mb-2.5 bg-gray rounded-[15px] border-none"
-                          >
-                            <AccordionTrigger className="font-semibold text-primary-foreground border-none lg:px-7.5 px-4 lg:py-7.5 py-4 text-left">
-                              {question}
-                            </AccordionTrigger>
-                            <AccordionContent className="lg:px-7.5 px-4 text-muted-foreground">
-                              {ans}
-                            </AccordionContent>
-                          </AccordionItem>
-                        </SlideUp>
-                      );
-                    }
-                  )}
-                </Accordion>
+                <div className="pt-15">
+                  <Accordion type="single" defaultValue="one" collapsible>
+                    {data?.content?.servicesArticle?.faq?.map(
+                      ({ ans, id, question }) => {
+                        return (
+                          <SlideUp key={id} id={id}>
+                            <AccordionItem
+                              value={id}
+                              className="mb-2.5 bg-gray rounded-[15px] border-none"
+                            >
+                              <AccordionTrigger className="font-semibold text-primary-foreground border-none lg:px-7.5 px-4 lg:py-7.5 py-4 text-left">
+                                {question}
+                              </AccordionTrigger>
+                              <AccordionContent className="lg:px-7.5 px-4 text-muted-foreground">
+                                {ans}
+                              </AccordionContent>
+                            </AccordionItem>
+                          </SlideUp>
+                        );
+                      }
+                    )}
+                  </Accordion>
+                </div>
               </div>
-            </div>
+            )}
           </article>
         </div>
       </div>

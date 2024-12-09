@@ -53,8 +53,8 @@ module.exports = {
     if (path.includes('/services/')) {
       return {
         loc: path,
-        changefreq: 'weekly',
-        priority: 0.8,
+        changefreq: 'daily',
+        priority: 0.9,
         lastmod: new Date().toISOString(),
       };
     }
@@ -73,7 +73,7 @@ module.exports = {
     return {
       loc: path,
       changefreq: 'daily',
-      priority: 0.7,
+      priority: 0.9,
       lastmod: new Date().toISOString(),
     };
   },
@@ -81,8 +81,8 @@ module.exports = {
     // Get all service routes
     const serviceRoutes = servicesData.map(service => ({
       loc: `/services/${service.slug}`,
-      changefreq: 'weekly',
-      priority: 0.8,
+      changefreq: 'daily',
+      priority: 0.9,
       lastmod: new Date().toISOString(),
     }));
 
