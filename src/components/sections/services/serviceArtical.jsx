@@ -50,7 +50,6 @@ const ServiceArtical = ({ data, slug }) => {
               </div>
             </div>
 
-            {/* list */}
             <div className="pt-7.5">
               <Title size={'5xl'}>
                 {data?.content?.servicesArticle?.list?.title}
@@ -86,25 +85,20 @@ const ServiceArtical = ({ data, slug }) => {
               </div>
               <div className="pt-7.5"></div>
             </div>
-            {/* list end  */}
 
-            {/* list2 - Digital Marketing Tips */}
             <div className="pt-15">
               <Title size={'5xl'}>
                 {data?.content?.servicesArticle?.list2?.title}
               </Title>
 
               <div className="pt-7.5 relative">
-                {/* Vertical dotted line - visible on all screens */}
                 <div className="absolute left-[17px] top-[45px] bottom-8 border-l-2 border-dashed border-primary/20" />
 
                 <div className="flex flex-col gap-10">
                   {data?.content?.servicesArticle?.list2?.items?.map(
                     (item, index) => (
                       <div key={index} className="group">
-                        {/* Desktop layout */}
                         <div className="items-start hidden gap-6 md:flex">
-                          {/* Circle container with icon */}
                           <div className="relative shrink-0">
                             <div
                               className="w-[35px] h-[35px] rounded-full bg-white border-2
@@ -117,7 +111,6 @@ const ServiceArtical = ({ data, slug }) => {
                             </div>
                           </div>
 
-                          {/* Content - Desktop */}
                           <div
                             className="flex-1 bg-gray rounded-[15px] p-6 hover:shadow-lg
                           transition-all duration-300"
@@ -131,7 +124,6 @@ const ServiceArtical = ({ data, slug }) => {
                           </div>
                         </div>
 
-                        {/* Mobile layout */}
                         <div className="flex md:hidden">
                           <div className="relative shrink-0">
                             <div
@@ -145,7 +137,6 @@ const ServiceArtical = ({ data, slug }) => {
                             </div>
                           </div>
 
-                          {/* Content - Mobile */}
                           <div
                             className="flex-1 bg-gray rounded-[15px] p-5 hover:shadow-lg
                           transition-all duration-300 ml-6"
@@ -167,7 +158,7 @@ const ServiceArtical = ({ data, slug }) => {
                 </div>
               </div>
             </div>
-            {/* list2 end */}
+
             {data?.content?.servicesArticle?.faq && (
               <div className="pt-12.5">
                 <Title size={'4xl'}>
