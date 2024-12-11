@@ -262,7 +262,23 @@ export const metadata = {
 export default function DigitalMarketingServices() {
   return (
     <div>
-      <h1>Digital Marketing Agency in India</h1>
+      <section className="py-5">
+        <div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="mb-6 text-3xl font-bold text-center text-muted-foreground">
+              What is Digital Marketing?
+            </h2>
+            <p className="text-lg leading-relaxed text-gray-600">
+              Digital marketing services include virtually everything online for
+              the promotional goals of brands, products, or services. All types
+              of SEO, content marketing, email campaigns, and social media
+              engagement comprise all kinds of paid advertising done across
+              digital channels to elevate the brand, generate lead traffic, and
+              drive business outcomes.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
