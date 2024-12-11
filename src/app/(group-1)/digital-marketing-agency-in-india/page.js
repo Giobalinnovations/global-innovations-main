@@ -264,6 +264,7 @@ export default function DigitalMarketingServices() {
     <div>
       <section className="py-5">
         <div>
+          <h1>Digital Marketing Agency in India</h1>
           <div className="max-w-4xl mx-auto">
             <h2 className="mb-6 text-3xl font-bold text-center text-muted-foreground">
               What is Digital Marketing?
