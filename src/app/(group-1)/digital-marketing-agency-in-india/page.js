@@ -23,6 +23,8 @@
 //   ChevronDown,
 // } from 'lucide-react';
 
+import PageTitle from '@/components/sections/pageTitle';
+
 // export const metadata = {
 //   title:
 //     'Global Innovation:  Best Digital Marketing Agency & Company in India| Digital Marketing Services',
@@ -261,10 +263,15 @@ export const metadata = {
 };
 export default function DigitalMarketingServices() {
   return (
-    <div>
+    <main>
+      <PageTitle
+        pageName="Digital Marketing Agency in India"
+        breadcrumbLink="services"
+        breadcrumbCurrent="Digital Marketing Agency in India"
+      />
+
       <section className="py-5">
         <div>
-          <h1>Digital Marketing Agency in India</h1>
           <div className="max-w-4xl mx-auto">
             <h2 className="mb-6 text-3xl font-bold text-center text-muted-foreground">
               What is Digital Marketing?
@@ -280,6 +287,6 @@ export default function DigitalMarketingServices() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
