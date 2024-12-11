@@ -205,7 +205,7 @@ const DigitalMarketingServices = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div>
           <h2 className="mb-12 text-3xl font-bold text-center text-muted-foreground">
             Your Questions, Our Proficiency. Everything You need to Know.
@@ -232,7 +232,7 @@ const DigitalMarketingServices = () => {
             </Accordion>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Form */}
       <section className="py-16">
