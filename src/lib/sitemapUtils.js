@@ -1,7 +1,7 @@
 const servicesData = [
-  {
-    slug: 'digital-marketing-services-india',
-  },
+  // {
+  //   slug: 'digital-marketing-services-india',
+  // },
   {
     slug: 'social-media-marketing-services-india',
   },
