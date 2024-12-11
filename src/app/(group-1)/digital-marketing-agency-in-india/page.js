@@ -272,7 +272,7 @@ export default function DigitalMarketingServices() {
 
       <section className="py-5">
         <div>
-          <div className="max-w-4xl mx-auto">
+          {/* <div className="max-w-4xl mx-auto">
             <h2 className="mb-6 text-3xl font-bold text-center text-muted-foreground">
               What is Digital Marketing?
             </h2>
@@ -284,7 +284,7 @@ export default function DigitalMarketingServices() {
               digital channels to elevate the brand, generate lead traffic, and
               drive business outcomes.
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
     </main>
