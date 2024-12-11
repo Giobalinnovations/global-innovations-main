@@ -134,9 +134,9 @@ const DigitalMarketingServices = () => {
   return (
     <main>
       <PageTitle
-        pageName="Digital Marketing Services in India"
+        pageName="Digital Marketing Agency in India"
         breadcrumbLink="services"
-        breadcrumbCurrent="Digital Marketing Services in India"
+        breadcrumbCurrent="Digital Marketing Agency in India"
       />
 
       {/* Introduction Section */}
