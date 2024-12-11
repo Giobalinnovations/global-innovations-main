@@ -41,14 +41,14 @@ import {
 } from 'lucide-react';
 
 export const servicesDataTwo = [
-  {
-    id: 1,
-    icon_1: <DigitalMarketing width={24} height={24} />,
-    service_name: 'Digital Marketing Services',
-    slug: 'digital-marketing-services-india',
-    description:
-      'We expand your online presence to meet the aims of your marketing efforts by means of effective, data-driven digital marketing strategies',
-  },
+  // {
+  //   id: 1,
+  //   icon_1: <DigitalMarketing width={24} height={24} />,
+  //   service_name: 'Digital Marketing Services',
+  //   slug: 'digital-marketing-services-india',
+  //   description:
+  //     'We expand your online presence to meet the aims of your marketing efforts by means of effective, data-driven digital marketing strategies',
+  // },
   {
     id: 2,
     icon_1: <Send />,
@@ -106,129 +106,129 @@ export const servicesDataTwo = [
 ];
 
 export const servicesDataContent = [
-  {
-    id: 1,
-    title: 'Digital Marketing Services',
-    slug: 'digital-marketing-services-india',
-    meta: {
-      title:
-        'Global Innovation:  Best Digital Marketing Agency & Company in India| Digital Marketing Services ',
-      description: `Partner with the best digital marketing agency & company in India. We offer best & expert digital marketing services for all your business needs. Let's connect today to increase your website traffic.`,
-      keywords:
-        'digital marketing services, media marketing, digital marketing company, best digital marketing, digital marketing solutions, best digital marketing services, digital marketing online, digital marketing seo, digital marketing business, best digital marketing company, digital marketing agency, services for digital marketing, digital marketing agency india, digital marketing agency in india​, digital marketing company in india​, digital marketing in India, digital marketing services in india​, best digital marketing agency in india​, best digital marketing company in india​, website traffic',
-    },
-    content: {
-      pageTitle: {
-        pageName: 'Digital Marketing Services in India',
-        breadcrumbLink: 'services',
-        breadcrumbCurrent: 'Digital Marketing Services in India',
-      },
-      servicesArticle: {
-        title: 'What is Digital Marketing?',
-        shortDescription: `Digital marketing services include virtually everything online for the promotional goals of brands, products, or services. All types of SEO, content marketing, email campaigns, and social media engagement comprise all kinds of paid advertising done across digital channels to elevate the brand, generate lead traffic, and drive business outcomes.`,
-        list: {
-          title: `Level Up Your Digital Performance With The Best Digital Marketing Services In India`,
-          description: `Why Choose Global Innovations as your Digital Marketing Partner?`,
-          items: [
-            {
-              id: 1,
-              icon: LayoutGrid,
-              title: 'A holistic strategy',
-              text: "We deliver end-to-end digital marketing solutions that are tailored to your brand's unique needs, meaning that all channels will always be cohesive and integrated.",
-            },
-            {
-              id: 2,
-              icon: LineChart,
-              title: 'Data-Driven Results',
-              text: 'Our strategies are found in rigorous analytics and data-driven insights to ensure each campaign yields measurable results.',
-            },
-            {
-              id: 3,
-              icon: Clock,
-              title: 'Years of Expertise',
-              text: 'Years of experience in different fields have made our team effective in developing marketing strategies which ensure it really touches the hearts of your audience and pushes forward growth.',
-            },
-            {
-              id: 4,
-              icon: RefreshCw,
-              title: 'Continuous Optimization',
-              text: 'Monitor and refine strategies to achieve maximum ROI, through continuous campaign adjustment ensuring peak performance based on real-time information.',
-            },
-          ],
-        },
-        list2: {
-          title: 'Essential Digital Marketing Tips To Grow Your Business',
-          items: [
-            {
-              icon: Share2,
-              title: 'Engage on Social Media Consistently',
-              text: 'Post on an agreement schedule on Facebook, Instagram, and LinkedIn. Engaging with your followers helps them increase loyalty to your brand and its online presence.',
-            },
-            {
-              icon: Search,
-              title: 'Optimize your website for SEO',
-              text: 'You can make your website search engine optimized by using relevant keywords and meta descriptions, replete with quality content. Such a website tends to attract more organic traffic while ensuring enhanced visibility on search engines.',
-            },
-            {
-              icon: FileText,
-              title: 'Invest in Quality Content Marketing',
-              text: 'If you can produce quality and valuable content, then you are attracting people and keeping them around. Create informative blogs, videos, and infographics that tell people what they need to know.',
-            },
-            {
-              icon: Mail,
-              title: 'Use Email Marketing for Retaining Existing Customers',
-              text: 'Email marketing campaigns will help you nurture the relationship with your existing customers. Keep in touch through updates, special offers, or helpful resources that keep them abreast of your brand.',
-            },
-            {
-              icon: MapPin,
-              title: 'Leverage Local SEO',
-              text: 'Incorporate location-specific keywords and a Google Business Profile in the local search optimization process. Local SEO brings you those customers who are specifically in your locality and actively look for services like yours.',
-            },
-            {
-              icon: MousePointer2,
-              title: 'Use Pay-per-click Ads for Targeted Reach',
-              text: 'PPC ads on Google and other social media enable you to reach a targeted section of potential customers precisely. Roll out carefully and constantly calibrate your moves by tweaking your ROI.',
-            },
-            {
-              icon: Users,
-              title: 'Team up with industry experts such as Global Innovation',
-              text: 'For particular digital marketing support, work with professionals in this regard, such as Global Innovation. Tailored solutions, delivered by the professionals, are going to optimize your campaigns and lead to impactful results.',
-            },
-          ],
-        },
-        faq: [
-          {
-            id: 'one',
-            question: 'How can this be done using digital marketing?',
-            ans: 'It makes their product very visible and connects with the target audience while driving more traffic to their sites, which then raises the sales and recognition of their brand.',
-          },
-          {
-            id: 'two',
-            question: 'What kind of digital marketing services do you offer?',
-            ans: 'The services provided are SEO, PPC, content marketing, social media marketing, email campaigns, and web analytics.',
-          },
-          {
-            id: 'three',
-            question:
-              'How long does it take to see results from digital marketing?',
-            ans: 'Results differ; in many cases, you can measure and see a difference within three to six months according to your approach.',
-          },
-          {
-            id: 'four',
-            question:
-              'How many types of digital marketing are available in India?',
-            ans: 'There are many forms of digital marketing available in India like SEO, social media marketing, content marketing, email marketing, PPC, affiliate marketing. Each one involves different ways of getting at and connecting with the target online public.',
-          },
-          {
-            id: 'five',
-            question:
-              'How do you measure the success of a digital marketing campaign?',
-            ans: 'We measure the performances of our campaigns through key metrics like website traffic, conversion rates, engagement levels, and ROI to ensure effectiveness.',
-          },
-        ],
-      },
-    },
-  },
+  // {
+  //   id: 1,
+  //   title: 'Digital Marketing Services',
+  //   slug: 'digital-marketing-services-india',
+  //   meta: {
+  //     title:
+  //       'Global Innovation:  Best Digital Marketing Agency & Company in India| Digital Marketing Services ',
+  //     description: `Partner with the best digital marketing agency & company in India. We offer best & expert digital marketing services for all your business needs. Let's connect today to increase your website traffic.`,
+  //     keywords:
+  //       'digital marketing services, media marketing, digital marketing company, best digital marketing, digital marketing solutions, best digital marketing services, digital marketing online, digital marketing seo, digital marketing business, best digital marketing company, digital marketing agency, services for digital marketing, digital marketing agency india, digital marketing agency in india​, digital marketing company in india​, digital marketing in India, digital marketing services in india​, best digital marketing agency in india​, best digital marketing company in india​, website traffic',
+  //   },
+  //   content: {
+  //     pageTitle: {
+  //       pageName: 'Digital Marketing Services in India',
+  //       breadcrumbLink: 'services',
+  //       breadcrumbCurrent: 'Digital Marketing Services in India',
+  //     },
+  //     servicesArticle: {
+  //       title: 'What is Digital Marketing?',
+  //       shortDescription: `Digital marketing services include virtually everything online for the promotional goals of brands, products, or services. All types of SEO, content marketing, email campaigns, and social media engagement comprise all kinds of paid advertising done across digital channels to elevate the brand, generate lead traffic, and drive business outcomes.`,
+  //       list: {
+  //         title: `Level Up Your Digital Performance With The Best Digital Marketing Services In India`,
+  //         description: `Why Choose Global Innovations as your Digital Marketing Partner?`,
+  //         items: [
+  //           {
+  //             id: 1,
+  //             icon: LayoutGrid,
+  //             title: 'A holistic strategy',
+  //             text: "We deliver end-to-end digital marketing solutions that are tailored to your brand's unique needs, meaning that all channels will always be cohesive and integrated.",
+  //           },
+  //           {
+  //             id: 2,
+  //             icon: LineChart,
+  //             title: 'Data-Driven Results',
+  //             text: 'Our strategies are found in rigorous analytics and data-driven insights to ensure each campaign yields measurable results.',
+  //           },
+  //           {
+  //             id: 3,
+  //             icon: Clock,
+  //             title: 'Years of Expertise',
+  //             text: 'Years of experience in different fields have made our team effective in developing marketing strategies which ensure it really touches the hearts of your audience and pushes forward growth.',
+  //           },
+  //           {
+  //             id: 4,
+  //             icon: RefreshCw,
+  //             title: 'Continuous Optimization',
+  //             text: 'Monitor and refine strategies to achieve maximum ROI, through continuous campaign adjustment ensuring peak performance based on real-time information.',
+  //           },
+  //         ],
+  //       },
+  //       list2: {
+  //         title: 'Essential Digital Marketing Tips To Grow Your Business',
+  //         items: [
+  //           {
+  //             icon: Share2,
+  //             title: 'Engage on Social Media Consistently',
+  //             text: 'Post on an agreement schedule on Facebook, Instagram, and LinkedIn. Engaging with your followers helps them increase loyalty to your brand and its online presence.',
+  //           },
+  //           {
+  //             icon: Search,
+  //             title: 'Optimize your website for SEO',
+  //             text: 'You can make your website search engine optimized by using relevant keywords and meta descriptions, replete with quality content. Such a website tends to attract more organic traffic while ensuring enhanced visibility on search engines.',
+  //           },
+  //           {
+  //             icon: FileText,
+  //             title: 'Invest in Quality Content Marketing',
+  //             text: 'If you can produce quality and valuable content, then you are attracting people and keeping them around. Create informative blogs, videos, and infographics that tell people what they need to know.',
+  //           },
+  //           {
+  //             icon: Mail,
+  //             title: 'Use Email Marketing for Retaining Existing Customers',
+  //             text: 'Email marketing campaigns will help you nurture the relationship with your existing customers. Keep in touch through updates, special offers, or helpful resources that keep them abreast of your brand.',
+  //           },
+  //           {
+  //             icon: MapPin,
+  //             title: 'Leverage Local SEO',
+  //             text: 'Incorporate location-specific keywords and a Google Business Profile in the local search optimization process. Local SEO brings you those customers who are specifically in your locality and actively look for services like yours.',
+  //           },
+  //           {
+  //             icon: MousePointer2,
+  //             title: 'Use Pay-per-click Ads for Targeted Reach',
+  //             text: 'PPC ads on Google and other social media enable you to reach a targeted section of potential customers precisely. Roll out carefully and constantly calibrate your moves by tweaking your ROI.',
+  //           },
+  //           {
+  //             icon: Users,
+  //             title: 'Team up with industry experts such as Global Innovation',
+  //             text: 'For particular digital marketing support, work with professionals in this regard, such as Global Innovation. Tailored solutions, delivered by the professionals, are going to optimize your campaigns and lead to impactful results.',
+  //           },
+  //         ],
+  //       },
+  //       faq: [
+  //         {
+  //           id: 'one',
+  //           question: 'How can this be done using digital marketing?',
+  //           ans: 'It makes their product very visible and connects with the target audience while driving more traffic to their sites, which then raises the sales and recognition of their brand.',
+  //         },
+  //         {
+  //           id: 'two',
+  //           question: 'What kind of digital marketing services do you offer?',
+  //           ans: 'The services provided are SEO, PPC, content marketing, social media marketing, email campaigns, and web analytics.',
+  //         },
+  //         {
+  //           id: 'three',
+  //           question:
+  //             'How long does it take to see results from digital marketing?',
+  //           ans: 'Results differ; in many cases, you can measure and see a difference within three to six months according to your approach.',
+  //         },
+  //         {
+  //           id: 'four',
+  //           question:
+  //             'How many types of digital marketing are available in India?',
+  //           ans: 'There are many forms of digital marketing available in India like SEO, social media marketing, content marketing, email marketing, PPC, affiliate marketing. Each one involves different ways of getting at and connecting with the target online public.',
+  //         },
+  //         {
+  //           id: 'five',
+  //           question:
+  //             'How do you measure the success of a digital marketing campaign?',
+  //           ans: 'We measure the performances of our campaigns through key metrics like website traffic, conversion rates, engagement levels, and ROI to ensure effectiveness.',
+  //         },
+  //       ],
+  //     },
+  //   },
+  // },
   {
     id: 2,
     title: 'Social Media Marketing Services',
