@@ -46,7 +46,7 @@ const ServicesDetails = ({ params }) => {
           breadcrumbLink={'services'}
           breadcrumbCurrent={data?.content?.pageTitle?.breadcrumbCurrent ?? ''}
         />
-        <ServiceArtical data={data} slug={slug} />
+        {/* <ServiceArtical data={data} slug={slug} /> */}
         <ContactForm
           color={'text-white'}
           inputColor={
